@@ -1,0 +1,89 @@
+{
+	"id": "6318e2ce-dc9f-43a3-8a7b-b894382b2d8c",
+	"createdAt": "2026-07-08T15:06:10.769Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"fields": [
+		{
+			"id": null,
+			"fieldName": "poNumber",
+			"fieldType": "smalltext",
+			"isUnique": true,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "vendorId",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "entity",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "description",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "currency",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "poValue",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 15,
+			"scale": 2
+		},
+		{
+			"id": null,
+			"fieldName": "remainingAmount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 15,
+			"scale": 2
+		},
+		{
+			"id": null,
+			"fieldName": "advancePaid",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 15,
+			"scale": 2,
+			"default": 0
+		},
+		{
+			"id": null,
+			"fieldName": "contractRef",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"vectorStoreConfig": null,
+	"name": "purchase_order",
+	"description": "Badeel Vendor Portal - purchase orders vendors can invoice against",
+	"ver": "26.07.08.1506",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

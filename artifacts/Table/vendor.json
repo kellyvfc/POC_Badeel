@@ -1,0 +1,156 @@
+{
+	"id": "06adaad3-04c6-459f-ab4e-b6ed3acb6737",
+	"createdAt": "2026-07-08T15:06:01.179Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"fields": [
+		{
+			"id": null,
+			"fieldName": "vendorId",
+			"fieldType": "smalltext",
+			"isUnique": true,
+			"isNullable": false,
+			"description": "Business key, e.g. V1001"
+		},
+		{
+			"id": null,
+			"fieldName": "companyName",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "contactTitle",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "contactFirstName",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "contactLastName",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "email",
+			"fieldType": "smalltext",
+			"isUnique": true,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "phone",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "country",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "address",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "city",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "zip",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "status",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false,
+			"default": "Invitation Sent"
+		},
+		{
+			"id": null,
+			"fieldName": "qualificationStatus",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false,
+			"default": "Not Started"
+		},
+		{
+			"id": null,
+			"fieldName": "invitedOn",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "registeredOn",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "categories",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "shipToLocations",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "taxId",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "bankVerified",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"isNullable": false,
+			"default": false
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"vectorStoreConfig": null,
+	"name": "vendor",
+	"description": "Badeel Vendor Portal - vendor master + onboarding/qualification state",
+	"ver": "26.07.08.1506",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

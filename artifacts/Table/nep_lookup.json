@@ -1,0 +1,48 @@
+{
+	"id": "a13327a0-d12e-4371-a60e-0e6811e3899c",
+	"createdAt": "2026-07-10T10:48:05.489Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"fields": [
+		{
+			"id": null,
+			"fieldName": "category",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "key",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "text",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "isTaxCountry",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"isNullable": true,
+			"default": false
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"vectorStoreConfig": null,
+	"name": "nep_lookup",
+	"description": "badeel_main_nep - generic lookup values (countries, currencies, payment terms, attachment types, contact titles, document types)",
+	"ver": "26.07.10.1048",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

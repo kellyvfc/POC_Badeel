@@ -1,0 +1,47 @@
+{
+	"id": "16e205b3-f386-4dee-990f-8789a4c54a60",
+	"createdAt": "2026-07-10T10:48:50.588Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"fields": [
+		{
+			"id": null,
+			"fieldName": "vendorCompany",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "name",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "size",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "type",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"vectorStoreConfig": null,
+	"name": "nep_vendor_document",
+	"description": "badeel_main_nep - vendor qualification documents",
+	"ver": "26.07.10.1048",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,148 @@
+{
+	"id": "11037f7a-b0bd-41fa-a000-0831650f571b",
+	"createdAt": "2026-07-08T15:06:13.737Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"fields": [
+		{
+			"id": null,
+			"fieldName": "invoiceId",
+			"fieldType": "smalltext",
+			"isUnique": true,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "poNumber",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "vendorId",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "entity",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "invoiceDate",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "dueDate",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "currency",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "paymentTerms",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "lineItems",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "grossAmount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 15,
+			"scale": 2,
+			"default": 0
+		},
+		{
+			"id": null,
+			"fieldName": "advanceAmount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 15,
+			"scale": 2,
+			"default": 0
+		},
+		{
+			"id": null,
+			"fieldName": "netPayable",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 15,
+			"scale": 2,
+			"default": 0
+		},
+		{
+			"id": null,
+			"fieldName": "status",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false,
+			"default": "Draft"
+		},
+		{
+			"id": null,
+			"fieldName": "submittedOn",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "paidOn",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "rejectionReason",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "attachments",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"vectorStoreConfig": null,
+	"name": "invoice",
+	"description": "Badeel Vendor Portal - vendor invoices against purchase orders",
+	"ver": "26.07.08.1506",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

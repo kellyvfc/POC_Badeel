@@ -1,0 +1,684 @@
+{
+	"id": "fe43390b-04b7-4ea6-ae36-e5b72bae06a4",
+	"createdAt": "2026-07-08T15:10:34.052Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "87b79e33-d455-423a-853e-f54a1eef5112",
+			"path": "/vendors",
+			"summary": "List vendors",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "status",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"name": "search",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "d52e0bbe-decd-43bc-bbf5-37146e201088",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "2d73969f-2a98-4097-b9e0-c5b8ea5deed6",
+			"path": "/home-summary",
+			"summary": "Home KPI summary",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "role",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"name": "vendorId",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "51d30663-0f11-414f-a4fc-d7220624e363",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "df27bb66-b91f-4da3-b13c-f5fa1e76f578",
+			"path": "/vendors/(vendorId)",
+			"summary": "Get vendor",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "vendorId",
+					"default": null,
+					"inPath": true,
+					"required": true,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "7a7a22ab-8d5f-4500-bc0d-fc32c4d441e1",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "f3d28933-873d-4f27-9848-124368f7061e",
+			"path": "/vendors/(vendorId)",
+			"summary": "Update vendor",
+			"method": "PUT",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "vendorId",
+					"default": null,
+					"inPath": true,
+					"required": true,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "87c88409-7d44-4f8b-a654-d7e4f2ae9346",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "201cb5b9-8a26-4e02-bf5e-f68fdd4d5080",
+			"path": "/vendors/invite",
+			"summary": "Invite vendors",
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "71d593ed-cf54-447d-bcb8-5c29923dc166",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "d59b8d18-06a9-4e49-844e-2c3b59bde429",
+			"path": "/vendors/register",
+			"summary": "Register vendor",
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "02caac2a-8b87-4f42-8399-525e6b7f66b5",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "c2324b48-19f7-4497-8b5e-45cefba27254",
+			"path": "/vendors/(vendorId)/qualification",
+			"summary": "Submit vendor qualification",
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "vendorId",
+					"default": null,
+					"inPath": true,
+					"required": true,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "e69d1cde-63d1-40b4-b270-e39e0c795a5c",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "954e6488-bfe6-4a4f-b5e5-d2f006200fc2",
+			"path": "/purchase-orders",
+			"summary": "List purchase orders",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "vendorId",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "cb8e7d21-84f1-4902-ba1b-ef0f6139f0c1",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "44b61e79-8cfa-4d51-8816-27cf24fe9c68",
+			"path": "/invoices",
+			"summary": "List invoices",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "role",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"name": "vendorId",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"name": "status",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"name": "search",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "ade7130a-63d4-4598-abd2-a0212ce26601",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "442b1970-1d58-4062-a0fc-8faaa9fca642",
+			"path": "/invoices/(invoiceId)",
+			"summary": "Get invoice",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "invoiceId",
+					"default": null,
+					"inPath": true,
+					"required": true,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "34f6231c-3383-4607-90fa-6e18f54ecb58",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e9be4081-693b-4cb2-9c68-ad2219a65d6e",
+			"path": "/invoices",
+			"summary": "Create invoice",
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "7bb7503f-2f11-481d-b40c-f1df521deb30",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "ba845763-73eb-4341-9ae3-10669f4b1a84",
+			"path": "/invoices/(invoiceId)/decision",
+			"summary": "Approve or reject invoice",
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "invoiceId",
+					"default": null,
+					"inPath": true,
+					"required": true,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "519805ef-e9e5-4e7e-9fd4-bf4835e0243f",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "3d916182-7e0f-4991-ac1e-4f3f3ee79643",
+			"path": "/home-summary-admin",
+			"summary": "Home KPI summary (admin, fixed)",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "7e932878-7043-43d9-93b9-82d139cdca1e",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "3dc8f4a0-6e63-4d10-bb24-841e8979ca06",
+			"path": "/home-summary-vendor",
+			"summary": "Home KPI summary (vendor V1004, fixed)",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "f29ab2b7-f970-456f-91af-4aa690a5f702",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "3b37c98a-eb64-4070-bc3a-468d3aa6bd23",
+			"path": "/invoices-admin",
+			"summary": "List all invoices (admin, fixed)",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "5ca1ccdf-6bdb-46ce-a3fb-96dc7e5ddb35",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "98690cd5-45d7-428a-b191-6ccdd27cf98b",
+			"path": "/invoices-vendor",
+			"summary": "List invoices for vendor V1004 (fixed)",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "1bb843a3-9b63-403d-b373-861e15aa7bdc",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "cd8ce004-f69d-4fae-8835-838d931d4aa6",
+			"path": "/purchase-orders-vendor",
+			"summary": "List purchase orders for vendor V1004 (fixed)",
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "0ae0b98f-2ed8-45fd-a494-b62e97b098f7",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [],
+	"documentation": [],
+	"name": "vendor-portal-api",
+	"endpoint": "/api/serverscript/vendor-portal-api",
+	"ver": "26.07.10.1143",
+	"version": null,
+	"description": "Badeel Vendor Portal backend API",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

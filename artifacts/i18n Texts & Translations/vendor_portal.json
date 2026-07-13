@@ -1,0 +1,24 @@
+{
+	"id": "9a3f1bbf-1d50-4792-ad89-032dc3dbe667",
+	"createdAt": "2026-07-09T10:42:15.333Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "vendor_portal",
+	"description": null,
+	"fallbackLocale": "en",
+	"application": "vendor_portal",
+	"ver": "26.07.09.1047",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

@@ -1,0 +1,195 @@
+{
+	"id": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"createdAt": "2026-07-08T14:42:42.832Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/kellyvfc/POC_Badeel.git",
+		"branch": "master"
+	},
+	"name": "POC_Badeel",
+	"description": "Development package for Badeel POC",
+	"ver": "26.07.13.1108",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [
+		{
+			"id": "e226e307-f9de-4cc9-9fde-e704d8d755db",
+			"application": "badeel_main",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "d2f2dfeb-366f-4a77-a7bd-a0af3c73e577",
+			"application": "vendor_portal",
+			"title": "Badeel Vendor Portal",
+			"description": "Badeel Vendor Portal - vendor onboarding and invoicing"
+		},
+		{
+			"id": "c9a2aea3-4011-4021-b705-ca45e0ae8340",
+			"application": "badeel_main_coc",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "99d41c85-9944-47e6-9378-c7d84e75e868",
+			"application": "badeel_main_nep",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "fe43390b-04b7-4ea6-ae36-e5b72bae06a4",
+			"name": "vendor-portal-api",
+			"description": "Badeel Vendor Portal backend API",
+			"apiGroup": null
+		},
+		{
+			"id": "61a461ce-8d4f-4ee4-9229-409f34aff01c",
+			"name": "badeel-main-nep-api",
+			"description": "GET APIs backing the badeel_main_nep app, replacing its hardcoded frontend data",
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "fe4fe20a-e2f9-409d-84de-31be706e7052",
+			"name": "nep_purchase_order",
+			"description": "badeel_main_nep - purchase order master catalog with line items (drives Completion Requests, CoCs, Invoices)"
+		},
+		{
+			"id": "f11b9f7f-3b0d-42a9-a446-a62aef062a92",
+			"name": "nep_vendor_invitation",
+			"description": "badeel_main_nep - vendor invitation log (Home admin activity widget + Invite Vendors recent invites list)"
+		},
+		{
+			"id": "cbffdfdd-252c-4900-a946-b6472d8fa319",
+			"name": "nep_completion_request",
+			"description": "badeel_main_nep - completion requests (vendor request for acceptance of delivered work against a PO)"
+		},
+		{
+			"id": "a13327a0-d12e-4371-a60e-0e6811e3899c",
+			"name": "nep_lookup",
+			"description": "badeel_main_nep - generic lookup values (countries, currencies, payment terms, attachment types, contact titles, document types)"
+		},
+		{
+			"id": "6603485e-4670-49f6-85d9-042b9941d268",
+			"name": "nep_certificate_of_completion",
+			"description": "badeel_main_nep - Certificates of Completion (CoC) issued once a Completion Request is accepted"
+		},
+		{
+			"id": "6318e2ce-dc9f-43a3-8a7b-b894382b2d8c",
+			"name": "purchase_order",
+			"description": "Badeel Vendor Portal - purchase orders vendors can invoice against"
+		},
+		{
+			"id": "554f68fd-0ce7-464d-af04-4be2a25914bc",
+			"name": "nep_vendor_bank",
+			"description": "badeel_main_nep - vendor bank accounts (Qualification profile bank details)"
+		},
+		{
+			"id": "2f844f84-fe08-4a85-a3f0-604c92f1a6aa",
+			"name": "nep_invoice",
+			"description": "badeel_main_nep - vendor invoices against purchase orders (Invoice List/Detail, Home widget)"
+		},
+		{
+			"id": "1d7c4b05-e489-4e8f-8930-0635ac53cf84",
+			"name": "nep_vendor",
+			"description": "badeel_main_nep - vendor master profile (Vendors list/detail, Qualification profile)"
+		},
+		{
+			"id": "16e205b3-f386-4dee-990f-8789a4c54a60",
+			"name": "nep_vendor_document",
+			"description": "badeel_main_nep - vendor qualification documents"
+		},
+		{
+			"id": "11037f7a-b0bd-41fa-a000-0831650f571b",
+			"name": "invoice",
+			"description": "Badeel Vendor Portal - vendor invoices against purchase orders"
+		},
+		{
+			"id": "06adaad3-04c6-459f-ab4e-b6ed3acb6737",
+			"name": "vendor",
+			"description": "Badeel Vendor Portal - vendor master + onboarding/qualification state"
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [
+		{
+			"id": "ae728add-e363-4c25-8aa0-57d100db5694",
+			"name": "Badeel Main NEP",
+			"description": "Backend server scripts for the badeel_main_nep app (seed data + GET APIs) in POC_Badeel"
+		},
+		{
+			"id": "43b77e7b-9a02-4059-b9b1-27a55a14a9b0",
+			"name": "Vendor Portal",
+			"description": "Badeel Vendor Portal - server scripts backing the App Designer app and vendor-portal-api"
+		}
+	],
+	"theme": [],
+	"theme_generator": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"tile_layout": [],
+	"category": [],
+	"tilegroup_layout": [],
+	"launchpad": [],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"i18n": [
+		{
+			"id": "e05c9929-7da0-4e23-83d2-2f564c711684",
+			"name": "badeel_main_coc",
+			"description": null
+		},
+		{
+			"id": "9a3f1bbf-1d50-4792-ad89-032dc3dbe667",
+			"name": "vendor_portal",
+			"description": null
+		},
+		{
+			"id": "17495516-2017-4f48-9481-047c7b84acf5",
+			"name": "badeel_main",
+			"description": null
+		},
+		{
+			"id": "12b497d1-61a0-424f-b4aa-f1e648c9b004",
+			"name": "badeel_main_nep",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": [],
+	"ui5_control": [],
+	"ai_agent": [],
+	"ai_model": [],
+	"ai_prompt": [],
+	"ai_tool": [],
+	"ai_guardrail": [],
+	"path_rewrite": [],
+	"font": [],
+	"vault": [],
+	"workflow": [],
+	"workflow_logs": []
+}

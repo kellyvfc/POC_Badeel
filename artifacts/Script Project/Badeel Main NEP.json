@@ -1,0 +1,10 @@
+{
+	"id": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"createdAt": "2026-07-10T10:53:52.246Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"name": "Badeel Main NEP",
+	"description": "Backend server scripts for the badeel_main_nep app (seed data + GET APIs) in POC_Badeel",
+	"ver": "26.07.10.1057",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"projectLogLevel": null
+}

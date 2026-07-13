@@ -1,0 +1,85 @@
+{
+	"id": "fe4fe20a-e2f9-409d-84de-31be706e7052",
+	"createdAt": "2026-07-10T10:48:52.080Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"fields": [
+		{
+			"id": null,
+			"fieldName": "poNumber",
+			"fieldType": "smalltext",
+			"isUnique": true,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "entity",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "description",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "contractRef",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "currency",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"id": null,
+			"fieldName": "advancePaid",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 15,
+			"scale": 2,
+			"default": 0
+		},
+		{
+			"id": null,
+			"fieldName": "billing",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "tax",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": null,
+			"fieldName": "lines",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"vectorStoreConfig": null,
+	"name": "nep_purchase_order",
+	"description": "badeel_main_nep - purchase order master catalog with line items (drives Completion Requests, CoCs, Invoices)",
+	"ver": "26.07.10.1048",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

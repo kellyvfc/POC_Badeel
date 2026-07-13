@@ -1,0 +1,10 @@
+{
+	"id": "43b77e7b-9a02-4059-b9b1-27a55a14a9b0",
+	"createdAt": "2026-07-08T15:06:22.900Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"name": "Vendor Portal",
+	"description": "Badeel Vendor Portal - server scripts backing the App Designer app and vendor-portal-api",
+	"ver": "26.07.08.1532",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"projectLogLevel": null
+}

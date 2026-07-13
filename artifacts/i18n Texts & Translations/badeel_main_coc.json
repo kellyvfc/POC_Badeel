@@ -1,0 +1,24 @@
+{
+	"id": "e05c9929-7da0-4e23-83d2-2f564c711684",
+	"createdAt": "2026-07-09T18:40:41.818Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "badeel_main_coc",
+	"description": null,
+	"fallbackLocale": "en",
+	"application": "badeel_main_coc",
+	"ver": "26.07.10.0855",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

@@ -1,0 +1,3258 @@
+@charset "UTF-8";
+/* ============ FuturaCyrillic Brand Font ============ */
+@font-face {
+  font-family: "FuturaCyrillic";
+  src: url("/media/root/POC_BADEEL/POC_BADEEL_FONTS/FuturaCyrillicLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaCyrillic";
+  src: url("/media/root/POC_BADEEL/POC_BADEEL_FONTS/FuturaCyrillicBook.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaCyrillic";
+  src: url("/media/root/POC_BADEEL/POC_BADEEL_FONTS/FuturaCyrillicMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaCyrillic";
+  src: url("/media/root/POC_BADEEL/POC_BADEEL_FONTS/FuturaCyrillicBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* ============ Badeel Vendor Portal — Design Tokens ============ */
+:root {
+  --badeel_main-brand-900: #0A0F1A;
+  --badeel_main-brand-700: #111928;
+  --badeel_main-primary: #007BDB;
+  --badeel_main-primary-dark: #2785DD;
+  --badeel_main-accent-orange: #EA9629;
+  --badeel_main-success: #257A3E;
+  --badeel_main-success-light: #E5F5EA;
+  --badeel_main-warning: #A65E00;
+  --badeel_main-warning-light: #FFF3E0;
+  --badeel_main-error: #B00020;
+  --badeel_main-error-light: #FDEAEC;
+  --badeel_main-info: #0857C4;
+  --badeel_main-info-light: #E8F1FC;
+  --badeel_main-surface: #FFFFFF;
+  --badeel_main-bg: #F5F6F7;
+  --badeel_main-border: #D9D9D9;
+  --badeel_main-border-strong: #BFC3C9;
+  --badeel_main-text-main: #1D2D3E;
+  --badeel_main-text-muted: #6A6D70;
+  --badeel_main-text-light: #AAAAAA;
+  --badeel_main-row-hover: #FAFAFB;
+  --badeel_main-focus-ring: rgba(0, 123, 219, 0.30);
+  --badeel_main-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sapUiTheme-sap_horizon_dark,
+.sapUiTheme-neptune_horizon_dark {
+  --badeel_main-brand-900: #0A0F1A;
+  --badeel_main-brand-700: #0E1620;
+  --badeel_main-primary: #4AA8F0;
+  --badeel_main-primary-dark: #6FBEF5;
+  --badeel_main-accent-orange: #F0A945;
+  --badeel_main-success: #5FD08A;
+  --badeel_main-success-light: rgba(95,208,138,0.16);
+  --badeel_main-warning: #F0A945;
+  --badeel_main-warning-light: rgba(240,169,69,0.16);
+  --badeel_main-error: #F5707F;
+  --badeel_main-error-light: rgba(245,112,127,0.16);
+  --badeel_main-info: #6FBEF5;
+  --badeel_main-info-light: rgba(111,190,245,0.16);
+  --badeel_main-surface: #1E2733;
+  --badeel_main-bg: #141C26;
+  --badeel_main-border: #2C3947;
+  --badeel_main-border-strong: #3A4A5A;
+  --badeel_main-text-main: #E6EAF0;
+  --badeel_main-text-muted: #9AA5B1;
+  --badeel_main-text-light: #6A7683;
+  --badeel_main-row-hover: #26313D;
+  --badeel_main-focus-ring: rgba(74,168,240,0.35);
+}
+
+/* ============ Page ============ */
+.badeel_main_page.sapMPage {
+  background-color: var(--badeel_main-bg) !important;
+}
+
+.badeel_main_page .sapMPageHeader.sapMIBar {
+  background: var(--badeel_main-brand-700) !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.15) !important;
+}
+
+.badeel_main_page .sapMPageHeader .sapMTitle,
+.badeel_main_page .sapMPageHeader .sapMBarChild .sapMTitle {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* ============ Main content padding ============ */
+.badeel_main_pageHeader {
+  margin-bottom: 24px !important;
+}
+
+.badeel_main_pageTitle.sapMTitle {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_pageSubtitle.sapMText {
+  margin-top: 4px !important;
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.9rem !important;
+}
+
+.badeel_main_sectionTitle.sapMTitle {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: var(--badeel_main-text-main) !important;
+  margin: 28px 0 12px !important;
+}
+
+.badeel_main_actionRow {
+  gap: 8px !important;
+  margin-bottom: 20px !important;
+}
+
+.badeel_main_tileRow {
+  gap: 16px !important;
+  margin-bottom: 28px !important;
+}
+
+/* ============ Buttons — secondary (default) ============ */
+.badeel_main_btn.sapMBtn > span {
+  background: var(--badeel_main-surface) !important;
+  border: 1px solid var(--badeel_main-border-strong) !important;
+  border-radius: 4px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s !important;
+}
+
+.badeel_main_btn.sapMBtn > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_btn.sapMBtn > span > span > bdi,
+.badeel_main_btn.sapMBtn > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):hover {
+  transform: translateY(-1px);
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-bg) !important;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.1) !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi,
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+}
+
+html.sap-desktop .badeel_main_btn.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+  border-color: var(--badeel_main-border-strong) !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi,
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):active {
+  transform: translateY(0) scale(0.98);
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-bg) !important;
+  box-shadow: none !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi,
+.badeel_main_btn.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btn.sapMBtn.sapMBtnDisabled > span {
+  opacity: 0.5;
+  background: var(--badeel_main-surface) !important;
+}
+
+.badeel_main_btn.sapMBtn.sapMBtnDisabled > span .sapMBtnIcon {
+  color: var(--badeel_main-text-muted) !important;
+}
+
+.badeel_main_btn.sapMBtn.sapMBtnDisabled > span > span > bdi,
+.badeel_main_btn.sapMBtn.sapMBtnDisabled > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-muted) !important;
+}
+
+/* ============ Buttons — primary ============ */
+.badeel_main_btnPrimary.sapMBtn > span {
+  background: var(--badeel_main-primary) !important;
+  border: 1px solid var(--badeel_main-primary) !important;
+  border-radius: 4px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, box-shadow 0.2s !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn > span .sapMBtnIcon {
+  color: #FFFFFF !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn > span > span > bdi,
+.badeel_main_btnPrimary.sapMBtn > span .sapMBtnContent > bdi {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover {
+  transform: translateY(-1px);
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-primary-dark) !important;
+  border-color: var(--badeel_main-primary-dark) !important;
+  box-shadow: 0 4px 12px rgba(0, 123, 219, 0.3) !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: #FFFFFF !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi,
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: #FFFFFF !important;
+}
+
+html.sap-desktop .badeel_main_btnPrimary.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon {
+  color: #FFFFFF !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi,
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi {
+  color: #FFFFFF !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active {
+  transform: translateY(0) scale(0.98);
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-primary) !important;
+  box-shadow: none !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon {
+  color: #FFFFFF !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi,
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi {
+  color: #FFFFFF !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span {
+  background: rgba(0, 123, 219, 0.35) !important;
+  border-color: transparent !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span .sapMBtnIcon {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span > span > bdi,
+.badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span .sapMBtnContent > bdi {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* ============ GenericTile (KPI) ============ */
+.badeel_main_tile.sapMGT {
+  --sapContent_FocusColor: transparent;
+  background: var(--badeel_main-surface) !important;
+  border: 1px solid var(--badeel_main-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08) !important;
+  overflow: hidden !important;
+  transition: box-shadow 0.2s, transform 0.2s !important;
+  width: 220px !important;
+}
+
+.badeel_main_tile.sapMGT:not(.sapMGTDisabled):not(.sapMGTStateFailed):hover {
+  box-shadow: 0 4px 14px rgba(16, 24, 40, 0.12) !important;
+  transform: translateY(-1px) !important;
+}
+
+.badeel_main_tile.sapMGT:not(.sapMGTDisabled):active {
+  transform: translateY(0) scale(0.99) !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08) !important;
+}
+
+.badeel_main_tile.sapMGT:focus,
+.badeel_main_tile.sapMGT:focus:not(:active) {
+  outline: none !important;
+}
+
+.badeel_main_tile.sapMGT:focus .sapMGTFocusDiv,
+.badeel_main_tile.sapMGT:focus:not(:active) .sapMGTFocusDiv,
+.badeel_main_tile.sapMGT:active .sapMGTFocusDiv,
+html.sap-desktop .badeel_main_tile.sapMGT:focus .sapMGTFocusDiv {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.badeel_main_tile .sapMGTHdrContent {
+  padding: 16px 20px 0 20px !important;
+}
+
+.badeel_main_tile .sapMGTHdrTxt .sapMText {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  color: var(--badeel_main-text-muted) !important;
+  text-transform: none !important;
+}
+
+.badeel_main_tile .sapMGTContent {
+  padding: 0 20px 16px 20px !important;
+}
+
+.badeel_main_tile .sapMNCValue,
+.badeel_main_tile .sapMNCValueScr .sapMNCValue {
+  font-weight: 700 !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+/* Default (Neutral/None) number color */
+.badeel_main_tile .sapMNCValueColorNeutral .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorNeutral .sapMNCScale,
+.badeel_main_tile .sapMNCValueColorNone .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorNone .sapMNCScale {
+  color: var(--badeel_main-text-main) !important;
+}
+
+/* State value colors (Critical=warning, Good=success, Error=error) */
+.badeel_main_tile .sapMNCValueColorCritical .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorCritical .sapMNCScale {
+  color: var(--badeel_main-warning) !important;
+}
+
+.badeel_main_tile .sapMNCValueColorGood .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorGood .sapMNCScale {
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_tile .sapMNCValueColorError .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorError .sapMNCScale {
+  color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_tile .sapMNCScale {
+  color: var(--badeel_main-text-muted) !important;
+}
+
+.badeel_main_tile .sapUiIcon {
+  font-family: "SAP-icons" !important;
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_tile .sapMText {
+  color: var(--badeel_main-text-main) !important;
+}
+
+/* ============ Tables ============ */
+.badeel_main_table.sapMList {
+  background: var(--badeel_main-surface) !important;
+  border: 1px solid var(--badeel_main-border) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08) !important;
+  --sapList_SelectionBackgroundColor: transparent;
+  --sapList_Hover_SelectionBackground: var(--badeel_main-row-hover);
+  --sapList_SelectionHoverBackground: var(--badeel_main-row-hover);
+  --sapList_Active_Background: transparent;
+  --sapList_Active_TextColor: var(--badeel_main-text-main);
+}
+
+.badeel_main_table.sapMList .sapMListTbl .sapMListTblHeader .sapMTableTH,
+.badeel_main_table .sapMListTblHeader .sapMListTblHeaderCell,
+.badeel_main_table .sapMTableTH,
+.badeel_main_table .sapMListTblHeader > .sapMTableTH {
+  background: var(--badeel_main-bg) !important;
+  background-color: var(--badeel_main-bg) !important;
+  border-bottom: 1px solid var(--badeel_main-border) !important;
+  padding: 10px 16px !important;
+}
+
+.badeel_main_table .sapMListTblHeader {
+  background: var(--badeel_main-bg) !important;
+  background-color: var(--badeel_main-bg) !important;
+}
+
+.badeel_main_table .sapMColumnHeader .sapMText,
+.badeel_main_table .sapMColumnHeader .sapMLabel {
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  color: var(--badeel_main-text-muted) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.03em !important;
+}
+
+.badeel_main_table .sapMColumnHeader .sapUiIcon {
+  color: var(--badeel_main-text-light) !important;
+}
+
+.badeel_main_table .sapMListTblRow {
+  background: var(--badeel_main-surface) !important;
+  border-bottom: 1px solid var(--badeel_main-border) !important;
+}
+
+.badeel_main_table .sapMListTblCell {
+  font-size: 0.85rem !important;
+  color: var(--badeel_main-text-main) !important;
+  padding: 12px 16px !important;
+  border-bottom: 1px solid var(--badeel_main-border) !important;
+}
+
+.badeel_main_table .sapMListTblCell .sapMText {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_table .sapMLIBHoverable.sapMListTblRow:hover,
+.badeel_main_table .sapMLIBHoverable.sapMListTblRow:hover > .sapMListTblCell {
+  background: var(--badeel_main-row-hover) !important;
+}
+
+.badeel_main_table .sapMLIB.sapMLIBActive,
+.badeel_main_table .sapMLIB.sapMLIBActive > .sapMListTblCell {
+  background: var(--badeel_main-surface) !important;
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_table .sapMLIB.sapMLIBActive .sapMLabel,
+.badeel_main_table .sapMLIB.sapMLIBActive .sapMText,
+.badeel_main_table .sapMLIB.sapMLIBActive .sapMTitle,
+.badeel_main_table .sapMLIB.sapMLIBActive .sapMObjStatusText,
+.badeel_main_table .sapMLIB.sapMLIBActive .sapUiIcon {
+  color: inherit !important;
+}
+
+.badeel_main_table .sapMListTblRow:focus {
+  outline: none !important;
+}
+
+.badeel_main_table .sapMListTblRow:focus > .sapMListTblCell::before,
+.badeel_main_table .sapMTableRowCustomFocus:focus > .sapMListTblCell::before {
+  border: none !important;
+  content: none !important;
+}
+
+.badeel_main_table .sapMTableTBody .sapMListTblRow:last-child > .sapMListTblCell {
+  border-bottom: none !important;
+}
+
+.badeel_main_table .sapMListNoData {
+  font-size: 0.875rem !important;
+  color: var(--badeel_main-text-light) !important;
+  padding: 32px 16px !important;
+  background: var(--badeel_main-surface) !important;
+}
+
+.badeel_main_table .sapMListTblSubCnt {
+  font-size: 0.8125rem !important;
+  color: var(--badeel_main-text-muted) !important;
+  padding: 8px 16px !important;
+  background: var(--badeel_main-bg) !important;
+  border-bottom: 1px solid var(--badeel_main-border) !important;
+}
+
+.badeel_main_table .sapMListTblSubCntRow .sapMLabel {
+  font-weight: 600 !important;
+  color: var(--badeel_main-text-muted) !important;
+}
+
+/* ============ ObjectStatus pills ============ */
+.badeel_main_table .sapMObjStatus {
+  border-radius: 999px !important;
+  padding: 3px 10px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusSuccess {
+  background: var(--badeel_main-success-light) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusSuccess .sapMObjStatusText,
+.badeel_main_table .sapMObjStatus.sapMObjStatusSuccess .sapMObjStatusIcon {
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusWarning {
+  background: var(--badeel_main-warning-light) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusWarning .sapMObjStatusText,
+.badeel_main_table .sapMObjStatus.sapMObjStatusWarning .sapMObjStatusIcon {
+  color: var(--badeel_main-warning) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusError {
+  background: var(--badeel_main-error-light) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusError .sapMObjStatusText,
+.badeel_main_table .sapMObjStatus.sapMObjStatusError .sapMObjStatusIcon {
+  color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusInformation {
+  background: var(--badeel_main-info-light) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusInformation .sapMObjStatusText,
+.badeel_main_table .sapMObjStatus.sapMObjStatusInformation .sapMObjStatusIcon {
+  color: var(--badeel_main-info) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusNone {
+  background: rgba(106, 109, 112, 0.14) !important;
+}
+
+.badeel_main_table .sapMObjStatus.sapMObjStatusNone .sapMObjStatusText,
+.badeel_main_table .sapMObjStatus.sapMObjStatusNone .sapMObjStatusIcon {
+  color: var(--badeel_main-text-muted) !important;
+}
+
+/* ============ SegmentedButton (role switch) ============ */
+.badeel_main_page .sapMSegB {
+  background: rgba(255, 255, 255, 0.14) !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 2px !important;
+}
+
+.badeel_main_page .sapMSegBBtn {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 999px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_page .sapMSegBBtn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #FFFFFF !important;
+}
+
+.badeel_main_page .sapMSegBBtnSel,
+.badeel_main_page .sapMSegBBtn.sapMSegBBtnSel {
+  background: var(--badeel_main-surface) !important;
+  color: var(--badeel_main-brand-700) !important;
+}
+
+.badeel_main_page .sapMSegBBtnFocus::after {
+  outline: none !important;
+  border: none !important;
+}
+
+/* ============ Shell layout ============ */
+.badeel_main_page.sapMPage .sapMPageScroll {
+  height: 100% !important;
+}
+
+.badeel_main_page.sapMPage section {
+  background: var(--badeel_main-bg) !important;
+}
+
+/* ---- Shellbar ---- */
+.badeel_main_shellbar {
+  background: var(--badeel_main-brand-700) !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  padding: 0 16px !important;
+  gap: 12px !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.2) !important;
+}
+
+.badeel_main_shellSpacer {
+  flex: 1 1 auto !important;
+}
+
+.badeel_main_shellLogo {
+  height: 26px !important;
+  width: auto !important;
+}
+
+.badeel_main_shellTitle.sapMTitle {
+  color: #FFFFFF !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  padding-left: 12px !important;
+  margin-left: 4px !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.25) !important;
+  white-space: nowrap !important;
+}
+
+/* Shell icon buttons (menu, bell) */
+.badeel_main_shellIconBtn.sapMBtn > span {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 50% !important;
+  transition: background 0.15s !important;
+}
+
+.badeel_main_shellIconBtn.sapMBtn > span .sapMBtnIcon {
+  color: #FFFFFF !important;
+}
+
+.badeel_main_shellIconBtn.sapMBtn .sapMBtnContent {
+  display: none !important;
+}
+
+.badeel_main_shellIconBtn.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+
+.badeel_main_shellIconBtn.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: #FFFFFF !important;
+}
+
+html.sap-desktop .badeel_main_shellIconBtn.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_shellIconBtn.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35) !important;
+  outline: none !important;
+}
+
+.badeel_main_shellIconBtn.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.badeel_main_shellIconBtn.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon {
+  color: #FFFFFF !important;
+}
+
+.badeel_main_shellAvatar.sapFAvatar {
+  background: var(--badeel_main-primary-dark) !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.badeel_main_shellAvatar .sapFAvatarInitialsHolder {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+
+/* ---- Role switch (pill) ---- */
+.badeel_main_roleSwitch {
+  background: rgba(255, 255, 255, 0.14) !important;
+  border-radius: 999px !important;
+  padding: 3px !important;
+  gap: 2px !important;
+}
+
+.badeel_main_roleBtn.sapMBtn > span {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 999px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, color 0.2s !important;
+}
+
+.badeel_main_roleBtn.sapMBtn > span > span > bdi,
+.badeel_main_roleBtn.sapMBtn > span .sapMBtnContent > bdi {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_roleBtn.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.badeel_main_roleBtn.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi,
+.badeel_main_roleBtn.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: #FFFFFF !important;
+}
+
+html.sap-desktop .badeel_main_roleBtn.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_roleBtn.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3) !important;
+  outline: none !important;
+}
+
+.badeel_main_roleBtn.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Active role */
+.badeel_main_roleBtnActive.sapMBtn > span {
+  background: var(--badeel_main-surface) !important;
+}
+
+.badeel_main_roleBtnActive.sapMBtn > span > span > bdi,
+.badeel_main_roleBtnActive.sapMBtn > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-brand-700) !important;
+}
+
+.badeel_main_roleBtnActive.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-surface) !important;
+}
+
+.badeel_main_roleBtnActive.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi,
+.badeel_main_roleBtnActive.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-brand-700) !important;
+}
+
+/* ---- Body row (side nav + content) ---- */
+.badeel_main_bodyRow {
+  align-items: stretch !important;
+  min-height: calc(100vh - 56px) !important;
+}
+
+.badeel_main_sideNav {
+  width: 248px !important;
+  min-width: 248px !important;
+  background: var(--badeel_main-surface) !important;
+  border-right: 1px solid var(--badeel_main-border) !important;
+  justify-content: space-between !important;
+  padding: 12px 0 !important;
+}
+
+.badeel_main_sideNav.badeel_main_sideNavCollapsed {
+  width: 64px !important;
+  min-width: 64px !important;
+}
+
+.badeel_main_sideNav.badeel_main_sideNavCollapsed .badeel_main_navLabel {
+  display: none !important;
+}
+
+.badeel_main_navTop {
+  width: 100% !important;
+}
+
+.badeel_main_navItem {
+  padding: 10px 20px !important;
+  gap: 14px !important;
+  cursor: pointer !important;
+  border-left: 3px solid transparent !important;
+  transition: background 0.12s !important;
+}
+
+.badeel_main_navItem:hover {
+  background: var(--badeel_main-bg) !important;
+}
+
+.badeel_main_navItem .badeel_main_navLabel {
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  color: var(--badeel_main-text-main) !important;
+  white-space: nowrap !important;
+}
+
+.badeel_main_navIcon {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 18px !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.badeel_main_navItemActive {
+  background: var(--badeel_main-info-light) !important;
+  border-left-color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_navItemActive:hover {
+  background: var(--badeel_main-info-light) !important;
+}
+
+.badeel_main_navItemActive .badeel_main_navLabel {
+  color: var(--badeel_main-primary) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_navItemActive .badeel_main_navIcon {
+  color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_navSettings {
+  border-top: 1px solid var(--badeel_main-border) !important;
+  margin-top: 12px !important;
+  padding-top: 16px !important;
+  padding-bottom: 8px !important;
+}
+
+/* ---- Content area ---- */
+.badeel_main_contentArea {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 24px 32px 48px !important;
+  background: var(--badeel_main-bg) !important;
+}
+
+/* ---- Tiles: full width row, larger min-width ---- */
+.badeel_main_tile.sapMGT {
+  width: 100% !important;
+  min-width: 240px !important;
+}
+
+.badeel_main_tileRow {
+  gap: 20px !important;
+}
+
+.badeel_main_tileRow > .sapMFlexItem,
+.badeel_main_tileRow > * {
+  flex: 1 1 240px !important;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .badeel_main_sideNav {
+    width: 64px !important;
+    min-width: 64px !important;
+  }
+  .badeel_main_sideNav .badeel_main_navLabel {
+    display: none !important;
+  }
+  .badeel_main_shellTitle.sapMTitle {
+    display: none !important;
+  }
+  .badeel_main_contentArea {
+    padding: 16px !important;
+  }
+}
+/* ============ Apply FuturaCyrillic across the app ============ */
+.badeel_main_app {
+  font-family: "FuturaCyrillic", "Segoe UI", "Roboto", sans-serif !important;
+}
+
+.badeel_main_app .sapMTitle,
+.badeel_main_app .sapMText,
+.badeel_main_app .sapMText > bdi,
+.badeel_main_app .sapMLabel,
+.badeel_main_app .sapMInputBaseInner,
+.badeel_main_app .sapMBtnContent,
+.badeel_main_app .sapMBtn .sapMBtnContent bdi,
+.badeel_main_app .sapMSltLabel,
+.badeel_main_app .sapMPanelHdr,
+.badeel_main_app .sapMObjStatusText,
+.badeel_main_app .sapMLIB,
+.badeel_main_app .sapMLnk,
+.badeel_main_app .sapMColumnHeaderText,
+.badeel_main_app .sapMListTblHeaderCell,
+.badeel_main_app .sapMListTblCell,
+.badeel_main_app .sapFAvatarInitialsHolder,
+.badeel_main_app .sapMNCValue,
+.badeel_main_app .sapMNCValueScr,
+.badeel_main_app .sapMTileCntContent,
+.badeel_main_app .sapMGTTitle {
+  font-family: "FuturaCyrillic", "Segoe UI", "Roboto", sans-serif !important;
+}
+
+/* ============ Qualification Profile ============ */
+.badeel_main_qualView {
+  padding: 24px 32px 40px 32px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.badeel_main_breadcrumb {
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.badeel_main_crumbLink.sapMLnk {
+  color: var(--badeel_main-primary) !important;
+  font-size: 0.8125rem !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+.badeel_main_crumbLink.sapMLnk:hover {
+  text-decoration: underline !important;
+}
+
+.badeel_main_crumbSep.sapMText, .badeel_main_crumbSep.sapMText > bdi {
+  color: var(--badeel_main-text-light) !important;
+  font-size: 0.8125rem !important;
+}
+
+.badeel_main_crumbCurrent.sapMText, .badeel_main_crumbCurrent.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8125rem !important;
+}
+
+/* Page header */
+.badeel_main_qualHeaderRow {
+  margin-bottom: 4px;
+}
+
+.badeel_main_pageTitle.sapMTitle {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+.badeel_main_pageSubtitle.sapMText, .badeel_main_pageSubtitle.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.95rem !important;
+}
+
+/* Status badge (Approved / Submitted) */
+.badeel_main_qualStatusBadge.sapMObjStatus {
+  border-radius: 45px !important;
+  padding: 6px 14px !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+.badeel_main_qualStatusBadge.sapMObjStatusSuccess {
+  background: var(--badeel_main-success-light) !important;
+}
+
+.badeel_main_qualStatusBadge.sapMObjStatusSuccess .sapMObjStatusText,
+.badeel_main_qualStatusBadge.sapMObjStatusSuccess .sapMObjStatusIcon {
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_qualStatusBadge.sapMObjStatusWarning {
+  background: var(--badeel_main-warning-light) !important;
+}
+
+.badeel_main_qualStatusBadge.sapMObjStatusWarning .sapMObjStatusText,
+.badeel_main_qualStatusBadge.sapMObjStatusWarning .sapMObjStatusIcon {
+  color: var(--badeel_main-warning) !important;
+}
+
+.badeel_main_qualStatusBadge .sapMObjStatusText {
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_qualStatusBadge .sapMObjStatusIcon {
+  font-size: 0.85rem !important;
+  margin-right: 6px !important;
+}
+
+/* Info strip */
+.badeel_main_infoStrip.sapMMsgStrip {
+  border-radius: 12px !important;
+  padding: 12px 18px !important;
+  background: var(--badeel_main-info-light) !important;
+  border: 1px solid var(--badeel_main-info) !important;
+}
+
+.badeel_main_infoStrip .sapMMsgStripMessage, .badeel_main_infoStrip .sapMMsgStripMessage bdi {
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  color: var(--badeel_main-info) !important;
+}
+
+.badeel_main_infoStrip .sapUiIcon, .badeel_main_infoStrip .sapMMsgStripIcon {
+  color: var(--badeel_main-info) !important;
+}
+
+/* Card */
+.badeel_main_card {
+  background: var(--badeel_main-surface) !important;
+  border: 1px solid var(--badeel_main-border) !important;
+  border-radius: 14px !important;
+  padding: 24px 28px !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06) !important;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+.badeel_main_cardHeader {
+  margin-bottom: 4px;
+}
+
+.badeel_main_cardTitle.sapMTitle {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+.badeel_main_formHint.sapMText, .badeel_main_formHint.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8125rem !important;
+}
+
+/* Form grid: 2 columns */
+.badeel_main_formGrid {
+  gap: 18px 24px;
+}
+
+.badeel_main_formField {
+  width: calc(50% - 12px);
+  min-width: 220px;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+.badeel_main_formFieldFull {
+  width: 100%;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+.badeel_main_formLabel.sapMLabel {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+.badeel_main_formLabel .sapMLabelColonAndRequired, .badeel_main_formLabel .sapMLabelRequired {
+  color: var(--badeel_main-error) !important;
+}
+
+/* Inputs */
+.badeel_main_input.sapMInputBase {
+  background: transparent !important;
+  width: 100% !important;
+}
+
+.badeel_main_input.sapMInputBase .sapMInputBaseContentWrapper {
+  background: var(--badeel_main-surface) !important;
+  border: 1.5px solid var(--badeel_main-border) !important;
+  border-radius: 8px !important;
+  padding: 0 12px !important;
+  height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  box-shadow: none !important;
+  outline: none !important;
+  position: relative !important;
+  transition: border-color 0.2s !important;
+}
+
+.badeel_main_input.sapMFocus.sapMInputBase .sapMInputBaseContentWrapper::before,
+.badeel_main_input.sapMInputBase.sapMFocus .sapMInputBaseContentWrapper::before,
+.badeel_main_input.sapMInputBase .sapMInputBaseContentWrapper::before {
+  content: none !important;
+  display: none !important;
+  border: none !important;
+}
+
+.badeel_main_input.sapMFocus.sapMInputBase .sapMInputBaseContentWrapper,
+.badeel_main_input.sapMInputBase.sapMFocus .sapMInputBaseContentWrapper {
+  border-color: var(--badeel_main-primary) !important;
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+}
+
+.badeel_main_input.sapMInputBase .sapMInputBaseInner {
+  background: transparent !important;
+  border: none !important;
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  color: var(--badeel_main-text-main) !important;
+  height: 100% !important;
+  padding: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_input.sapMInputBase .sapMInputBaseInner::placeholder {
+  color: var(--badeel_main-text-light) !important;
+  font-style: normal !important;
+}
+
+.badeel_main_input.sapMInputBase:not(.sapMFocus):not(.sapMInputBaseReadonly) .sapMInputBaseContentWrapper:hover {
+  border-color: var(--badeel_main-border-strong) !important;
+}
+
+/* Read-only (non-editable) input state */
+.badeel_main_input.sapMInputBaseReadonly .sapMInputBaseContentWrapper {
+  background: var(--badeel_main-bg) !important;
+  border: 1.5px solid var(--badeel_main-border) !important;
+  border-style: solid !important;
+}
+
+.badeel_main_input.sapMInputBaseReadonly .sapMInputBaseInner {
+  color: var(--badeel_main-text-muted) !important;
+}
+
+/* Select */
+.badeel_main_select.sapMSlt {
+  background: var(--badeel_main-surface) !important;
+  border: 1.5px solid var(--badeel_main-border) !important;
+  border-radius: 8px !important;
+  height: 42px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  position: relative !important;
+  transition: border-color 0.2s !important;
+  overflow: visible !important;
+}
+
+.badeel_main_select.sapMSlt > .sapMSltLabel {
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  color: var(--badeel_main-text-main) !important;
+  line-height: 42px !important;
+  padding: 0 2.5rem 0 12px !important;
+}
+
+.badeel_main_select.sapMSlt .sapMSltArrow {
+  background: transparent !important;
+  border: none !important;
+  border-left: none !important;
+  width: 2.5rem !important;
+  height: 100% !important;
+  top: 0 !important;
+  right: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  box-shadow: none !important;
+}
+
+.badeel_main_select.sapMSlt .sapMSltArrow::before {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.95rem !important;
+}
+
+.badeel_main_select.sapMSltHoverable:hover > .sapMSltArrow,
+.badeel_main_select.sapMSltHoverable:not(.sapMSltPressed):hover > .sapMSltArrow {
+  border: none !important;
+  border-left: none !important;
+}
+
+.badeel_main_select.sapMSlt.sapMSltPressed > .sapMSltArrow {
+  border: none !important;
+  border-left: none !important;
+}
+
+.badeel_main_select.sapMSltHoverable:not(.sapMSltPressed):hover {
+  background: var(--badeel_main-surface) !important;
+  border-color: var(--badeel_main-border-strong) !important;
+}
+
+html.sap-desktop .badeel_main_select.sapMSlt.sapMSltFocused:not(.sapMSltDisabled) {
+  border-color: var(--badeel_main-primary) !important;
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+}
+
+.badeel_main_select.sapMSlt.sapMSltPressed {
+  background: var(--badeel_main-surface) !important;
+  border-color: var(--badeel_main-primary) !important;
+}
+
+/* Checkbox */
+.badeel_main_checkbox .sapMCbBg {
+  border-color: var(--badeel_main-border-strong) !important;
+  border-radius: 4px !important;
+  width: 20px !important;
+  height: 20px !important;
+  transition: background-color 0.2s, border-color 0.2s !important;
+}
+
+.badeel_main_checkbox .sapMCbBg.sapMCbMarkChecked, .badeel_main_checkbox.sapMCbSel .sapMCbBg {
+  background: var(--badeel_main-primary) !important;
+  border-color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_checkbox .sapMCbBg .sapMCbMark {
+  color: #ffffff !important;
+  font-size: 12px !important;
+}
+
+.badeel_main_checkbox .sapMCbLabel, .badeel_main_checkbox .sapMCbLabel bdi {
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  color: var(--badeel_main-text-main) !important;
+  padding-left: 8px !important;
+}
+
+.badeel_main_checkbox:focus .sapMCbBg::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Primary button (pill) */
+.badeel_main_btnPrimary.sapMBtn > span {
+  background: var(--badeel_main-primary) !important;
+  border-radius: 8px !important;
+  border: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, box-shadow 0.2s !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn > span .sapMBtnIcon {
+  color: #ffffff !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn > span > span > bdi, .badeel_main_btnPrimary.sapMBtn > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover {
+  transform: translateY(-1px);
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-primary-dark) !important;
+  box-shadow: 0 4px 12px rgba(0, 123, 219, 0.3) !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi, .badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+html.sap-desktop .badeel_main_btnPrimary.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi, .badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active {
+  transform: scale(0.98);
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi, .badeel_main_btnPrimary.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span {
+  background: rgba(0, 123, 219, 0.35) !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span .sapMBtnIcon {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span > span > bdi, .badeel_main_btnPrimary.sapMBtn.sapMBtnDisabled > span .sapMBtnContent > bdi {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Secondary button (outline) */
+.badeel_main_btnSecondary.sapMBtn > span {
+  background: var(--badeel_main-surface) !important;
+  border: 1.5px solid var(--badeel_main-border) !important;
+  border-radius: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn > span > span > bdi, .badeel_main_btnSecondary.sapMBtn > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):hover {
+  transform: translateY(-1px);
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-bg) !important;
+  border-color: var(--badeel_main-border-strong) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi, .badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+}
+
+html.sap-desktop .badeel_main_btnSecondary.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+  border-color: var(--badeel_main-border) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi, .badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):active {
+  transform: scale(0.98);
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-bg) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi, .badeel_main_btnSecondary.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn.sapMBtnDisabled > span {
+  border-color: var(--badeel_main-border) !important;
+  background: var(--badeel_main-surface) !important;
+  opacity: 0.5;
+}
+
+.badeel_main_btnSecondary.sapMBtn.sapMBtnDisabled > span .sapMBtnIcon {
+  color: var(--badeel_main-text-light) !important;
+}
+
+.badeel_main_btnSecondary.sapMBtn.sapMBtnDisabled > span > span > bdi, .badeel_main_btnSecondary.sapMBtn.sapMBtnDisabled > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-light) !important;
+}
+
+/* Delete action icon button */
+.badeel_main_btnDelete.sapMBtn > span {
+  background: transparent !important;
+  transition: background 0.15s !important;
+}
+
+.badeel_main_btnDelete.sapMBtn > span .sapMBtnIcon {
+  color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_btnDelete.sapMBtn .sapMBtnContent {
+  display: none !important;
+}
+
+.badeel_main_btnDelete.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-error-light) !important;
+}
+
+.badeel_main_btnDelete.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: var(--badeel_main-error) !important;
+}
+
+html.sap-desktop .badeel_main_btnDelete.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btnDelete.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+}
+
+.badeel_main_btnDelete.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-error-light) !important;
+}
+
+/* Upload zone */
+.badeel_main_uploadZone {
+  border: 2px dashed var(--badeel_main-border-strong) !important;
+  border-radius: 12px !important;
+  padding: 32px 20px !important;
+  gap: 8px;
+  background: var(--badeel_main-bg) !important;
+  box-sizing: border-box;
+}
+
+.badeel_main_uploadIcon {
+  color: var(--badeel_main-primary) !important;
+  font-size: 2.5rem !important;
+}
+
+.badeel_main_uploadTitle.sapMText, .badeel_main_uploadTitle.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+.badeel_main_uploadHint.sapMText, .badeel_main_uploadHint.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8125rem !important;
+  text-align: center;
+}
+
+/* Docs list */
+.badeel_main_docsList.sapMList {
+  background: transparent !important;
+  margin-top: 8px;
+}
+
+.badeel_main_docsList .sapMLIB {
+  background: var(--badeel_main-surface) !important;
+  border-bottom: 1px solid var(--badeel_main-border) !important;
+}
+
+.badeel_main_docsList .sapMSLITitleOnly, .badeel_main_docsList .sapMSLITitle {
+  font-family: var(--badeel_main-font-family) !important;
+  color: var(--badeel_main-text-main) !important;
+}
+
+/* Footer */
+.badeel_main_qualFooter {
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Dialog */
+.badeel_main_dialog.sapMDialog {
+  border-radius: 16px !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15) !important;
+  overflow: hidden !important;
+}
+
+.badeel_main_dialog.sapMDialog::before {
+  content: none !important;
+  display: none !important;
+}
+
+.badeel_main_dialog.sapMDialog > header .sapMDialogTitleGroup .sapMHeader-CTX {
+  background: var(--badeel_main-surface) !important;
+  border-radius: 16px 16px 0 0 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--badeel_main-border) !important;
+}
+
+.badeel_main_dialog.sapMDialog > header .sapMDialogTitleGroup .sapMTitle {
+  color: var(--badeel_main-text-main) !important;
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+}
+
+.badeel_main_dialog.sapMDialog > .sapMDialogSection {
+  background: var(--badeel_main-surface) !important;
+  border-image: none !important;
+  border: 0 none transparent !important;
+}
+
+.badeel_main_dialog.sapMDialog .sapMDialogScrollCont {
+  background: var(--badeel_main-surface) !important;
+  padding: 20px 24px !important;
+}
+
+.badeel_main_dialog.sapMDialog > footer .sapMFooter-CTX {
+  background: var(--badeel_main-surface) !important;
+  border-top: 1px solid var(--badeel_main-border) !important;
+  border-radius: 0 0 16px 16px !important;
+  box-shadow: none !important;
+}
+
+.badeel_main_dialogBody {
+  gap: 14px;
+}
+
+/* MessageBox */
+.badeel_main_msgBox.sapMDialog {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+.badeel_main_msgBox .sapMDialogSection {
+  border-image: none !important;
+  border: 0 none transparent !important;
+}
+
+.badeel_main_msgBox .sapMText, .badeel_main_msgBox .sapMText bdi {
+  font-family: var(--badeel_main-font-family) !important;
+  color: var(--badeel_main-text-main) !important;
+}
+
+/* Responsive: single column form on narrow */
+@media (max-width: 900px) {
+  .badeel_main_qualView {
+    padding: 16px !important;
+  }
+  .badeel_main_formField {
+    width: 100% !important;
+  }
+  .badeel_main_card {
+    padding: 18px !important;
+  }
+}
+/* ============ Create Invoice Wizard ============ */
+/* Progress chips */
+.badeel_main_wizProgress {
+  gap: 10px 8px;
+  padding: 16px 0;
+  margin-bottom: 4px;
+}
+
+.badeel_main_wizStep {
+  gap: 8px;
+  padding: 6px 14px 6px 6px;
+  border-radius: 40px;
+  background: var(--badeel_main-surface);
+  border: 1px solid var(--badeel_main-border);
+  box-sizing: border-box;
+}
+
+.badeel_main_wizNum.sapMText, .badeel_main_wizNum.sapMText > bdi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--badeel_main-border);
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8125rem !important;
+  font-weight: 700 !important;
+  text-align: center;
+  line-height: 26px !important;
+}
+
+.badeel_main_wizLbl.sapMText, .badeel_main_wizLbl.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  white-space: nowrap;
+}
+
+/* Active step */
+.badeel_main_wizStepActive {
+  background: var(--badeel_main-info-light);
+  border-color: var(--badeel_main-primary);
+}
+
+.badeel_main_wizStepActive .badeel_main_wizNum.sapMText, .badeel_main_wizStepActive .badeel_main_wizNum.sapMText > bdi {
+  background: var(--badeel_main-primary);
+  color: #ffffff !important;
+}
+
+.badeel_main_wizStepActive .badeel_main_wizLbl.sapMText, .badeel_main_wizStepActive .badeel_main_wizLbl.sapMText > bdi {
+  color: var(--badeel_main-primary) !important;
+}
+
+/* Completed step */
+.badeel_main_wizStepDone {
+  background: var(--badeel_main-success-light);
+  border-color: var(--badeel_main-success);
+}
+
+.badeel_main_wizStepDone .badeel_main_wizNum.sapMText, .badeel_main_wizStepDone .badeel_main_wizNum.sapMText > bdi {
+  background: var(--badeel_main-success);
+  color: #ffffff !important;
+}
+
+.badeel_main_wizStepDone .badeel_main_wizLbl.sapMText, .badeel_main_wizStepDone .badeel_main_wizLbl.sapMText > bdi {
+  color: var(--badeel_main-success) !important;
+}
+
+/* Line items total cell */
+.badeel_main_liTotal.sapMText, .badeel_main_liTotal.sapMText > bdi {
+  font-weight: 700 !important;
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_grossRow {
+  gap: 16px;
+  padding: 14px 12px 4px 12px;
+  border-top: 2px solid var(--badeel_main-border);
+  margin-top: 4px;
+}
+
+.badeel_main_grossLabel.sapMText, .badeel_main_grossLabel.sapMText > bdi {
+  font-weight: 700 !important;
+  color: var(--badeel_main-text-main) !important;
+  font-size: 0.95rem !important;
+}
+
+.badeel_main_grossValue.sapMText, .badeel_main_grossValue.sapMText > bdi {
+  font-weight: 700 !important;
+  color: var(--badeel_main-primary) !important;
+  font-size: 1.05rem !important;
+}
+
+/* Advance summary panel */
+.badeel_main_summaryPanel {
+  background: var(--badeel_main-bg);
+  border: 1px solid var(--badeel_main-border);
+  border-radius: 12px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+}
+
+.badeel_main_summaryRow {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--badeel_main-border);
+}
+
+.badeel_main_summaryLabel.sapMText, .badeel_main_summaryLabel.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.9rem !important;
+}
+
+.badeel_main_summaryValue.sapMText, .badeel_main_summaryValue.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_summaryTotal {
+  border-bottom: none !important;
+  border-top: 2px solid var(--badeel_main-border-strong);
+  margin-top: 4px;
+}
+
+.badeel_main_summaryLabelTotal.sapMText, .badeel_main_summaryLabelTotal.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+}
+
+.badeel_main_summaryValueTotal.sapMText, .badeel_main_summaryValueTotal.sapMText > bdi {
+  color: var(--badeel_main-primary) !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+}
+
+/* Attachment row */
+.badeel_main_attachRow {
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Review (Step 6) — rich layout */
+.badeel_main_reviewContent {
+  width: 100%;
+}
+
+.badeel_main_revSection {
+  width: 100%;
+  margin-bottom: 28px;
+  font-family: var(--badeel_main-font-family);
+}
+
+.badeel_main_revSectionTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--badeel_main-text-main);
+  margin-bottom: 16px;
+}
+
+.badeel_main_revGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.badeel_main_revField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.badeel_main_revLabel {
+  font-size: 0.8125rem;
+  color: var(--badeel_main-text-muted);
+}
+
+.badeel_main_revValue {
+  font-size: 0.95rem;
+  color: var(--badeel_main-text-main);
+  font-weight: 500;
+}
+
+/* Review line-items table */
+.badeel_main_revTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.badeel_main_revTable thead th {
+  background: var(--badeel_main-bg);
+  color: var(--badeel_main-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--badeel_main-border);
+}
+
+.badeel_main_revTable td {
+  font-size: 0.9rem;
+  color: var(--badeel_main-text-main);
+  padding: 14px;
+  border-bottom: 1px solid var(--badeel_main-border);
+}
+
+.badeel_main_revTable .badeel_main_revNum {
+  text-align: right;
+}
+
+.badeel_main_revEmpty {
+  text-align: center !important;
+  color: var(--badeel_main-text-light) !important;
+  padding: 24px !important;
+}
+
+.badeel_main_revEmptyText {
+  color: var(--badeel_main-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Review attachments */
+.badeel_main_revAttList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.badeel_main_revAttList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--badeel_main-border);
+}
+
+.badeel_main_revAttName {
+  color: var(--badeel_main-text-main);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.badeel_main_revAttType {
+  color: var(--badeel_main-text-muted);
+  font-size: 0.8125rem;
+}
+
+/* Review advance summary */
+.badeel_main_revSummary {
+  background: var(--badeel_main-bg);
+  border: 1px solid var(--badeel_main-border);
+  border-radius: 12px;
+  padding: 8px 20px;
+}
+
+.badeel_main_revSumRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--badeel_main-border);
+  font-size: 0.9rem;
+  color: var(--badeel_main-text-main);
+}
+
+.badeel_main_revSumRow span:first-child {
+  color: var(--badeel_main-text-muted);
+}
+
+.badeel_main_revSumTotal {
+  border-bottom: none;
+  border-top: 2px solid var(--badeel_main-border-strong);
+  margin-top: 4px;
+}
+
+.badeel_main_revSumTotal span {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--badeel_main-text-main);
+}
+
+.badeel_main_revSumTotal span:last-child {
+  color: var(--badeel_main-primary);
+}
+
+@media (max-width: 700px) {
+  .badeel_main_revGrid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Wizard nav */
+.badeel_main_wizardNav {
+  padding: 20px 0 8px 0;
+  border-top: 1px solid var(--badeel_main-border);
+  margin-top: 12px;
+}
+
+.badeel_main_wizardNav .sapMBtn {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+.badeel_main_wizardNavRight {
+  gap: 12px;
+}
+
+.badeel_main_wizardNavRight .sapMBtn {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+/* Done panel */
+.badeel_main_doneCard {
+  padding: 48px 32px !important;
+  gap: 16px;
+}
+
+.badeel_main_doneIconCircle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--badeel_main-success-light);
+  box-sizing: border-box;
+}
+
+.badeel_main_doneIcon {
+  color: var(--badeel_main-success) !important;
+  font-size: 2.25rem !important;
+}
+
+.badeel_main_doneTitle.sapMTitle {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  text-align: center;
+}
+
+.badeel_main_doneText.sapMText, .badeel_main_doneText.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.95rem !important;
+  text-align: center;
+  max-width: 30rem;
+}
+
+.badeel_main_doneActions {
+  gap: 12px;
+  width: 22rem;
+  max-width: 100%;
+  margin-top: 8px;
+}
+
+.badeel_main_doneActions .sapMBtn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .badeel_main_wizLbl.sapMText {
+    display: none !important;
+  }
+  .badeel_main_wizStep {
+    padding: 6px !important;
+  }
+  .badeel_main_doneActions {
+    width: 100% !important;
+  }
+}
+/* ============ Select PO table (radio + light-blue hover) ============ */
+/* Light blue hover on the whole row */
+.badeel_main_poTable .sapMLIBHoverable.sapMListTblRow:hover,
+.badeel_main_poTable .sapMLIBHoverable.sapMListTblRow:hover > .sapMListTblCell,
+.badeel_main_poTable .sapMLIBHoverable.sapMListTblRow:hover > .sapMListTblSelCol {
+  background: var(--badeel_main-info-light) !important;
+  background-color: var(--badeel_main-info-light) !important;
+}
+
+/* Selected row light blue */
+.badeel_main_poTable.sapMList {
+  --sapList_SelectionBackgroundColor: var(--badeel_main-info-light);
+  --sapList_Hover_SelectionBackground: var(--badeel_main-info-light);
+  --sapList_SelectionHoverBackground: var(--badeel_main-info-light);
+}
+
+.badeel_main_poTable.sapMList .sapMListTblRow.sapMLIB.sapMLIBSelected,
+.badeel_main_poTable.sapMList .sapMListTblRow.sapMLIB.sapMLIBSelected > .sapMListTblCell,
+.badeel_main_poTable.sapMList .sapMListTblRow.sapMLIB.sapMLIBSelected > .sapMListTblSelCol {
+  background: var(--badeel_main-info-light) !important;
+  background-color: var(--badeel_main-info-light) !important;
+}
+
+/* Radio button styling in the selection column */
+.badeel_main_poTable .sapMListTblSelCol {
+  padding: 0 8px 0 12px !important;
+}
+
+.badeel_main_poTable .sapMRb .sapMRbB {
+  border-color: var(--badeel_main-border-strong) !important;
+}
+
+.badeel_main_poTable .sapMRb.sapMRbSel .sapMRbB {
+  border-color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_poTable .sapMRb.sapMRbSel .sapMRbBInn {
+  background: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_poTable .sapMRb:focus .sapMRbB::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* ============ Invoices List ============ */
+.badeel_main_filterBar {
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-bottom: 4px;
+}
+
+.badeel_main_filterBar > .sapMFlexItem {
+  margin: 0 !important;
+}
+
+.badeel_main_resultCount.sapMText, .badeel_main_resultCount.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8rem !important;
+  margin-top: 8px;
+}
+
+/* Search field */
+.badeel_main_search.sapMSF > form.sapMSFF {
+  background: var(--badeel_main-surface) !important;
+  border: 1.5px solid var(--badeel_main-border) !important;
+  border-radius: 8px !important;
+  height: 42px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 4px 0 14px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  position: relative !important;
+  transition: border-color 0.2s !important;
+}
+
+html.sap-desktop .badeel_main_search.sapMSF.sapMFocus > .sapMSFF::before,
+.badeel_main_search.sapMSF.sapMFocus > .sapMSFF::before,
+.badeel_main_search.sapMSF > .sapMSFF::before {
+  content: none !important;
+  display: none !important;
+  border: none !important;
+}
+
+.badeel_main_search.sapMSF.sapMFocus > form.sapMSFF {
+  border-color: var(--badeel_main-primary) !important;
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+}
+
+.badeel_main_search.sapMSF .sapMSFF {
+  box-shadow: none !important;
+}
+
+.badeel_main_search.sapMSF .sapMSFI {
+  background: transparent !important;
+  border: none !important;
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  color: var(--badeel_main-text-main) !important;
+  height: 100% !important;
+  padding: 0 !important;
+  outline: none !important;
+  -webkit-appearance: none !important;
+}
+
+.badeel_main_search.sapMSF .sapMSFI::placeholder {
+  color: var(--badeel_main-text-light) !important;
+  font-style: normal !important;
+}
+
+.badeel_main_search.sapMSF .sapMSFS {
+  background: transparent !important;
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+}
+
+.badeel_main_search.sapMSF .sapMSFS .sapUiIcon {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 1rem !important;
+}
+
+.badeel_main_search.sapMSF .sapMSFR {
+  display: none !important;
+}
+
+/* Status chips */
+.badeel_main_chipGroup {
+  gap: 8px;
+}
+
+.badeel_main_chip.sapMBtn > span {
+  background: var(--badeel_main-surface) !important;
+  border: 1.5px solid var(--badeel_main-border) !important;
+  border-radius: 40px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, border-color 0.2s !important;
+}
+
+.badeel_main_chip.sapMBtn > span > span > bdi, .badeel_main_chip.sapMBtn > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_chip.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-info-light) !important;
+  border-color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_chip.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi, .badeel_main_chip.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-primary) !important;
+}
+
+html.sap-desktop .badeel_main_chip.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_chip.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+  border-color: var(--badeel_main-border) !important;
+}
+
+.badeel_main_chip.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-info-light) !important;
+}
+
+/* Active chip */
+.badeel_main_chipActive.sapMBtn > span {
+  background: var(--badeel_main-primary) !important;
+  border-color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_chipActive.sapMBtn > span > span > bdi, .badeel_main_chipActive.sapMBtn > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+.badeel_main_chipActive.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-primary-dark) !important;
+  border-color: var(--badeel_main-primary-dark) !important;
+}
+
+.badeel_main_chipActive.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi, .badeel_main_chipActive.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+/* Status pill (ObjectStatus in list) */
+.badeel_main_statusPill.sapMObjStatus {
+  border-radius: 40px !important;
+  padding: 4px 12px !important;
+  display: inline-flex !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusSuccess {
+  background: var(--badeel_main-success-light) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusSuccess .sapMObjStatusText {
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusWarning {
+  background: var(--badeel_main-warning-light) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusWarning .sapMObjStatusText {
+  color: var(--badeel_main-warning) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusError {
+  background: var(--badeel_main-error-light) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusError .sapMObjStatusText {
+  color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusInformation {
+  background: var(--badeel_main-info-light) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusInformation .sapMObjStatusText {
+  color: var(--badeel_main-info) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusNone {
+  background: var(--badeel_main-bg) !important;
+}
+
+.badeel_main_statusPill.sapMObjStatusNone .sapMObjStatusText {
+  color: var(--badeel_main-text-muted) !important;
+}
+
+.badeel_main_statusPill .sapMObjStatusText {
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+/* ============ Invoice Detail ============ */
+.badeel_main_errorStrip.sapMMsgStrip {
+  border-radius: 12px !important;
+  padding: 12px 18px !important;
+  background: var(--badeel_main-error-light) !important;
+  border: 1px solid var(--badeel_main-error) !important;
+}
+
+.badeel_main_errorStrip .sapMMsgStripMessage, .badeel_main_errorStrip .sapMMsgStripMessage bdi {
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_errorStrip .sapUiIcon, .badeel_main_errorStrip .sapMMsgStripIcon {
+  color: var(--badeel_main-error) !important;
+}
+
+/* Object header */
+.badeel_main_objHeader {
+  background: var(--badeel_main-surface) !important;
+  border: 1px solid var(--badeel_main-border) !important;
+  border-radius: 14px !important;
+  padding: 24px 28px !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06) !important;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.badeel_main_objHeaderTop {
+  gap: 16px;
+}
+
+.badeel_main_objTitleRow {
+  gap: 16px;
+}
+
+.badeel_main_objAvatar.sapFAvatar {
+  background: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_objAvatar .sapFAvatarInitialsHolder {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.badeel_main_objTitle.sapMTitle {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+}
+
+.badeel_main_objSubtitle.sapMText, .badeel_main_objSubtitle.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.9rem !important;
+}
+
+/* Key facts row */
+.badeel_main_keyFactsRow {
+  gap: 28px 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--badeel_main-border);
+}
+
+.badeel_main_keyFact {
+  gap: 4px;
+}
+
+.badeel_main_keyFactLabel.sapMText, .badeel_main_keyFactLabel.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badeel_main_keyFactValue.sapMText, .badeel_main_keyFactValue.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+}
+
+/* Detail tabs (IconTabBar) */
+.badeel_main_detailTabs.sapMITB {
+  margin-top: 16px;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITH {
+  background: transparent !important;
+  border-bottom: 1px solid var(--badeel_main-border) !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITBText {
+  color: var(--badeel_main-text-muted) !important;
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  width: auto !important;
+  padding: 6px 4px !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITHTextContent {
+  color: inherit !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITBFilterDefault .sapMITBFilterWrapper:hover .sapMITBText {
+  color: var(--badeel_main-text-main) !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITBFilter[aria-selected=true] .sapMITBText {
+  color: var(--badeel_main-primary) !important;
+  font-weight: 700 !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITBFilter[aria-selected=true] .sapMITHTextContent {
+  color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITBContentArrow::after {
+  background: var(--badeel_main-primary) !important;
+}
+
+html.sap-desktop .badeel_main_detailTabs .sapMITBTextOnly .sapMITBHead .sapMITBItem:focus .sapMITBText::after,
+html.sap-desktop .badeel_main_detailTabs .sapMITBTextOnly .sapMITBHead .sapMITBItem:not(.sapUiDnDDragging):focus .sapMITBText::after {
+  content: none !important;
+  display: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.badeel_main_detailTabs .sapMITBItem:focus, .badeel_main_detailTabs .sapMITBFilter:focus, .badeel_main_detailTabs .sapMITH:focus, .badeel_main_detailTabs .sapMITBHead:focus {
+  outline: none !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITBContainerContent {
+  background: transparent !important;
+}
+
+.badeel_main_detailTabs.sapMITB .sapMITBContent {
+  background: transparent !important;
+  padding: 20px 0 !important;
+}
+
+@media (max-width: 900px) {
+  .badeel_main_keyFactsRow {
+    gap: 16px 24px;
+  }
+  .badeel_main_search.sapMSF {
+    width: 100% !important;
+  }
+}
+/* Invoices list header row */
+.badeel_main_invListHeaderRow {
+  margin-bottom: 4px;
+}
+
+/* ============ Attachment list items (rich layout) ============ */
+.badeel_main_attachItem.sapMCLI, .badeel_main_attachItem .sapMLIBContent {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.badeel_main_attachItem.sapMLIB {
+  border-bottom: none !important;
+  background: transparent !important;
+}
+
+.badeel_main_attachItem.sapMLIB:focus {
+  outline: none !important;
+}
+
+.badeel_main_attachRow2 {
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--badeel_main-border);
+  border-radius: 12px;
+  background: var(--badeel_main-surface);
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.badeel_main_attachRow2:hover {
+  border-color: var(--badeel_main-border-strong);
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06);
+}
+
+/* Icon box (light-blue rounded square) */
+.badeel_main_attachIconBox {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 10px;
+  background: var(--badeel_main-info-light);
+  box-sizing: border-box;
+}
+
+.badeel_main_attachIcon {
+  color: var(--badeel_main-primary) !important;
+  font-size: 1.15rem !important;
+}
+
+/* Info (name + status/subtitle) */
+.badeel_main_attachInfo {
+  gap: 4px;
+}
+
+.badeel_main_attachName.sapMText, .badeel_main_attachName.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_attachSub.sapMText, .badeel_main_attachSub.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8125rem !important;
+}
+
+/* Uploaded status badge (green pill) */
+.badeel_main_attachBadge.sapMObjStatus {
+  display: inline-flex !important;
+  border-radius: 40px !important;
+  padding: 3px 10px !important;
+  background: var(--badeel_main-success-light) !important;
+}
+
+.badeel_main_attachBadge.sapMObjStatusSuccess .sapMObjStatusText, .badeel_main_attachBadge.sapMObjStatusSuccess .sapMObjStatusIcon {
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_attachBadge .sapMObjStatusText {
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  font-family: var(--badeel_main-font-family) !important;
+}
+
+.badeel_main_attachBadge .sapMObjStatusIcon {
+  font-size: 0.8rem !important;
+  margin-right: 5px !important;
+}
+
+/* Spacer pushes delete to the right */
+.badeel_main_flexSpacer {
+  flex: 1 1 auto !important;
+}
+
+/* Delete button (outlined square with trash icon) */
+.badeel_main_attachDelBtn.sapMBtn > span {
+  background: var(--badeel_main-surface) !important;
+  border: 1px solid var(--badeel_main-border) !important;
+  border-radius: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.15s, border-color 0.15s !important;
+}
+
+.badeel_main_attachDelBtn.sapMBtn > span .sapMBtnIcon {
+  color: var(--badeel_main-text-muted) !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_attachDelBtn.sapMBtn .sapMBtnContent {
+  display: none !important;
+}
+
+.badeel_main_attachDelBtn.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-error-light) !important;
+  border-color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_attachDelBtn.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: var(--badeel_main-error) !important;
+}
+
+html.sap-desktop .badeel_main_attachDelBtn.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_attachDelBtn.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+  border-color: var(--badeel_main-border) !important;
+}
+
+.badeel_main_attachDelBtn.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-error-light) !important;
+}
+
+/* ============ Invite Vendors (Admin) ============ */
+/* Success strip */
+.badeel_main_successStrip.sapMMsgStrip {
+  border-radius: 12px !important;
+  padding: 12px 18px !important;
+  background: var(--badeel_main-success-light) !important;
+  border: 1px solid var(--badeel_main-success) !important;
+}
+
+.badeel_main_successStrip .sapMMsgStripMessage, .badeel_main_successStrip .sapMMsgStripMessage bdi {
+  font-family: var(--badeel_main-font-family) !important;
+  font-size: 0.9rem !important;
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_successStrip .sapUiIcon, .badeel_main_successStrip .sapMMsgStripIcon {
+  color: var(--badeel_main-success) !important;
+}
+
+/* Vendor rows list */
+.badeel_main_vendorRows.sapMList {
+  background: transparent !important;
+}
+
+.badeel_main_vendorRowItem.sapMCLI, .badeel_main_vendorRowItem .sapMLIBContent {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.badeel_main_vendorRowItem.sapMLIB {
+  border-bottom: none !important;
+  background: transparent !important;
+}
+
+.badeel_main_vendorRowItem.sapMLIB:focus {
+  outline: none !important;
+}
+
+.badeel_main_vendorRowBox {
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--badeel_main-border);
+  border-radius: 12px;
+  background: var(--badeel_main-bg);
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.badeel_main_vrField {
+  flex: 1 1 200px;
+  min-width: 180px;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+/* Ghost button (Add Another Vendor) */
+.badeel_main_btnGhost.sapMBtn > span {
+  background: transparent !important;
+  border: 1.5px dashed var(--badeel_main-border-strong) !important;
+  border-radius: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, border-color 0.2s !important;
+}
+
+.badeel_main_btnGhost.sapMBtn > span .sapMBtnIcon {
+  color: var(--badeel_main-primary) !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_btnGhost.sapMBtn > span > span > bdi, .badeel_main_btnGhost.sapMBtn > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-primary) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_btnGhost.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-info-light) !important;
+  border-color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_btnGhost.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_btnGhost.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi, .badeel_main_btnGhost.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-primary) !important;
+}
+
+html.sap-desktop .badeel_main_btnGhost.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btnGhost.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+  border-color: var(--badeel_main-border-strong) !important;
+}
+
+.badeel_main_btnGhost.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-info-light) !important;
+}
+
+/* Email preview dialog content */
+.badeel_main_emailPreview {
+  border: 1px solid var(--badeel_main-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.badeel_main_emailPvHeader {
+  background: var(--badeel_main-brand-700) !important;
+  padding: 28px 32px !important;
+  gap: 14px;
+  box-sizing: border-box;
+}
+
+.badeel_main_emailPvLogo {
+  height: 22px !important;
+  width: auto !important;
+}
+
+.badeel_main_emailPvTitle.sapMTitle {
+  color: #FFFFFF !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+}
+
+.badeel_main_emailPvContent {
+  background: var(--badeel_main-surface) !important;
+  padding: 28px 32px !important;
+  gap: 14px;
+  box-sizing: border-box;
+}
+
+.badeel_main_emailPvText.sapMText, .badeel_main_emailPvText.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+}
+
+.badeel_main_emailPvCtaBox {
+  padding: 12px 0 !important;
+}
+
+.badeel_main_emailPvNote.sapMText, .badeel_main_emailPvNote.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+}
+
+.badeel_main_emailPvFooter.sapMText, .badeel_main_emailPvFooter.sapMText > bdi {
+  display: block;
+  background: var(--badeel_main-bg) !important;
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.75rem !important;
+  text-align: center;
+  padding: 16px 32px !important;
+}
+
+/* ============ Vendor Detail extras ============ */
+.badeel_main_objHeaderActions {
+  gap: 10px;
+}
+
+.badeel_main_objHeaderActions .sapMBtn {
+  margin-left: 8px;
+}
+
+/* Category tag pills */
+.badeel_main_tagList {
+  gap: 8px;
+}
+
+.badeel_main_tagPill {
+  display: inline-block;
+  background: var(--badeel_main-info-light);
+  color: var(--badeel_main-primary);
+  padding: 5px 14px;
+  border-radius: 40px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: var(--badeel_main-font-family);
+}
+
+/* ============ Admin invoice approve/reject buttons ============ */
+/* Approve (green) */
+.badeel_main_btnApprove.sapMBtn > span {
+  background: var(--badeel_main-success) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, box-shadow 0.2s !important;
+}
+
+.badeel_main_btnApprove.sapMBtn > span .sapMBtnIcon {
+  color: #ffffff !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_btnApprove.sapMBtn > span > span > bdi, .badeel_main_btnApprove.sapMBtn > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):hover {
+  transform: translateY(-1px);
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: #1e6a35 !important;
+  box-shadow: 0 4px 12px rgba(37, 122, 62, 0.3) !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi, .badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+html.sap-desktop .badeel_main_btnApprove.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px rgba(37, 122, 62, 0.35) !important;
+  outline: none !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi, .badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-success) !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi, .badeel_main_btnApprove.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+/* Reject (red outline) */
+.badeel_main_btnReject.sapMBtn > span {
+  background: var(--badeel_main-surface) !important;
+  border: 1.5px solid var(--badeel_main-error) !important;
+  border-radius: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transition: background 0.2s, box-shadow 0.2s !important;
+}
+
+.badeel_main_btnReject.sapMBtn > span .sapMBtnIcon {
+  color: var(--badeel_main-error) !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.badeel_main_btnReject.sapMBtn > span > span > bdi, .badeel_main_btnReject.sapMBtn > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-error) !important;
+  font-weight: 600 !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):hover {
+  transform: translateY(-1px);
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: var(--badeel_main-error) !important;
+  border-color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi, .badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+html.sap-desktop .badeel_main_btnReject.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px rgba(176, 0, 32, 0.3) !important;
+  outline: none !important;
+  border-color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon {
+  color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi, .badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi {
+  color: var(--badeel_main-error) !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: var(--badeel_main-error) !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+.badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi, .badeel_main_btnReject.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi {
+  color: #ffffff !important;
+}
+
+/* Invoice detail header right group (actions + status) */
+.badeel_main_objHeaderRight {
+  gap: 10px;
+}
+
+.badeel_main_objHeaderRight .sapMBtn {
+  margin-right: 8px;
+}
+
+/* NumericContent value-color state fallbacks (class may sit on value or NC root) */
+.badeel_main_tile .sapMNCValue.sapMNCValueColorCritical,
+.badeel_main_tile .sapMNCValueColorCritical.sapMNCValueScr .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorCritical .sapMNCValue {
+  color: var(--badeel_main-warning) !important;
+}
+
+.badeel_main_tile .sapMNCValue.sapMNCValueColorGood,
+.badeel_main_tile .sapMNCValueColorGood.sapMNCValueScr .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorGood .sapMNCValue {
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_tile .sapMNCValue.sapMNCValueColorError,
+.badeel_main_tile .sapMNCValueColorError.sapMNCValueScr .sapMNCValue,
+.badeel_main_tile .sapMNCValueColorError .sapMNCValue {
+  color: var(--badeel_main-error) !important;
+}
+
+/* ============ Registration Landing (auth) ============ */
+.badeel_main_authPage.sapMPage {
+  background: var(--badeel_main-primary) !important;
+}
+
+.badeel_main_authPage.sapMPage section {
+  background: linear-gradient(160deg, var(--badeel_main-primary) 0%, var(--badeel_main-info) 100%) !important;
+}
+
+.badeel_main_authPage .sapMPageScroll {
+  display: flex !important;
+}
+
+.badeel_main_authWrapper {
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.badeel_main_authCard {
+  background: var(--badeel_main-surface) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 24px 60px rgba(10, 15, 26, 0.35) !important;
+  padding: 44px 40px !important;
+  width: 440px;
+  max-width: 100%;
+  box-sizing: border-box;
+  gap: 16px;
+  text-align: center;
+}
+
+/* Logo row */
+.badeel_main_authLogo {
+  gap: 10px;
+  margin-bottom: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wide logo pill (matches vendor portal header look, not a square) */
+.badeel_main_authLogoBadge {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 10px !important;
+  background: var(--badeel_main-brand-700) !important;
+  box-sizing: border-box;
+  padding: 10px 16px !important;
+}
+
+.badeel_main_authLogoImg {
+  height: 24px !important;
+  width: auto !important;
+  display: block !important;
+}
+
+.badeel_main_authLogoText.sapMText, .badeel_main_authLogoText.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+}
+
+/* Info icon circle */
+.badeel_main_authIconCircle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--badeel_main-info-light) !important;
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+
+.badeel_main_authIcon {
+  color: var(--badeel_main-info) !important;
+  font-size: 1.9rem !important;
+}
+
+/* Texts */
+.badeel_main_authTitle.sapMTitle {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  text-align: center;
+  width: 100% !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+.badeel_main_authTitle.sapMTitle > span, .badeel_main_authTitle.sapMTitle > span > bdi {
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+.badeel_main_authText.sapMText, .badeel_main_authText.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  text-align: center;
+  width: 100% !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* Email field */
+.badeel_main_authField {
+  gap: 6px;
+  text-align: left;
+  margin: 12px 0;
+}
+
+.badeel_main_authHint.sapMText, .badeel_main_authHint.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.8rem !important;
+}
+
+/* Button full width */
+.badeel_main_authBtn.sapMBtn {
+  width: 100% !important;
+}
+
+.badeel_main_authBtn.sapMBtn > span {
+  width: 100% !important;
+}
+
+/* Footer note (sits on blue bg -> light text) */
+.badeel_main_authFooterNote.sapMText, .badeel_main_authFooterNote.sapMText > bdi {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.8rem !important;
+  text-align: center;
+}
+
+/* ============ Vendor Registration Form ============ */
+.badeel_main_regFormPage.sapMPage {
+  background: var(--badeel_main-bg) !important;
+}
+
+.badeel_main_regFormPage.sapMPage section {
+  background: var(--badeel_main-bg) !important;
+}
+
+.badeel_main_regFormPage .sapMPageScroll {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.badeel_main_regFormShell {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+/* Header row (logo + step) */
+.badeel_main_regFormHeaderRow {
+  width: 100%;
+}
+
+.badeel_main_regFormLogo {
+  gap: 10px;
+  align-items: center;
+}
+
+.badeel_main_regFormLogoBadge {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 10px !important;
+  background: var(--badeel_main-brand-700) !important;
+  box-sizing: border-box;
+  padding: 9px 14px !important;
+}
+
+.badeel_main_regFormLogoImg {
+  height: 22px !important;
+  width: auto !important;
+  display: block !important;
+}
+
+.badeel_main_regFormLogoText.sapMText, .badeel_main_regFormLogoText.sapMText > bdi {
+  color: var(--badeel_main-text-main) !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+}
+
+.badeel_main_regFormStep.sapMText, .badeel_main_regFormStep.sapMText > bdi {
+  color: var(--badeel_main-text-muted) !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+}
+
+/* Card fills shell width */
+.badeel_main_regFormCard {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Category tags (List that flows tags inline) */
+.badeel_main_tagList.sapMList {
+  background: transparent !important;
+  margin-top: 4px;
+}
+
+.badeel_main_tagList .sapMListUl {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.badeel_main_tagList .sapMListNoData {
+  display: none !important;
+  border: 0 !important;
+}
+
+.badeel_main_tagList .sapMLIB {
+  border-bottom: 0 !important;
+}
+
+.badeel_main_tagItem.sapMLIB, .badeel_main_tagItem.sapMCLI {
+  width: auto !important;
+  background: transparent !important;
+  border-bottom: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  line-height: normal !important;
+}
+
+.badeel_main_tagItem .sapMLIBContent {
+  padding: 0 !important;
+  width: auto !important;
+  min-height: 0 !important;
+}
+
+.badeel_main_tagItem .sapMLIBContent > div {
+  min-height: 0 !important;
+}
+
+.badeel_main_tag {
+  background: var(--badeel_main-info-light) !important;
+  border: 1px solid var(--badeel_main-info) !important;
+  border-radius: 999px !important;
+  padding: 3px 6px 3px 12px !important;
+  gap: 2px;
+  box-sizing: border-box;
+  height: 28px !important;
+  align-items: center !important;
+}
+
+.badeel_main_tagText.sapMText, .badeel_main_tagText.sapMText > bdi {
+  color: var(--badeel_main-info) !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+}
+
+/* Tag remove: icon-only button */
+.badeel_main_tagRemove.sapMBtn > span {
+  background: transparent !important;
+  border: none !important;
+  transition: background 0.15s !important;
+}
+
+.badeel_main_tagRemove.sapMBtn > span .sapMBtnIcon {
+  color: var(--badeel_main-info) !important;
+  font-size: 0.75rem !important;
+}
+
+.badeel_main_tagRemove.sapMBtn .sapMBtnContent {
+  display: none !important;
+}
+
+.badeel_main_tagRemove.sapMBtn:not(.sapMBtnDisabled):hover > span {
+  background: rgba(8, 87, 196, 0.15) !important;
+}
+
+.badeel_main_tagRemove.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon {
+  color: var(--badeel_main-error) !important;
+}
+
+html.sap-desktop .badeel_main_tagRemove.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before {
+  border: 0 !important;
+  outline: none !important;
+}
+
+.badeel_main_tagRemove.sapMBtn:not(.sapMBtnDisabled):focus > span {
+  box-shadow: 0 0 0 3px var(--badeel_main-focus-ring) !important;
+  outline: none !important;
+}
+
+.badeel_main_tagRemove.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon {
+  color: var(--badeel_main-info) !important;
+}
+
+.badeel_main_tagRemove.sapMBtn:not(.sapMBtnDisabled):active > span {
+  background: rgba(8, 87, 196, 0.1) !important;
+}
+
+/* Tag add row */
+.badeel_main_tagAddRow {
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.badeel_main_tagInput.sapMInputBase {
+  max-width: 320px !important;
+  flex: 0 1 320px !important;
+}
+
+/* Location rows (List, one row per location) */
+.badeel_main_locList.sapMList {
+  background: transparent !important;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.badeel_main_locList .sapMListUl {
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.badeel_main_locList .sapMListNoData {
+  display: none !important;
+  border: 0 !important;
+}
+
+.badeel_main_locList .sapMLIB {
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+}
+
+.badeel_main_locItem.sapMLIB, .badeel_main_locItem.sapMCLI {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 10px;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+.badeel_main_locItem .sapMLIBContent {
+  border: 0 !important;
+  padding: 2px !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+.badeel_main_locRow {
+  gap: 8px;
+  width: 100%;
+  padding: 1px 0;
+}
+
+.badeel_main_locInput.sapMInputBase {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+
+.badeel_main_addLocBtn.sapMBtn {
+  align-self: flex-start !important;
+}
+
+/* Registration footer button spacing */
+.badeel_main_regFormFooter {
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .badeel_main_regFormShell {
+    padding: 16px 12px 40px;
+  }
+  .badeel_main_regFormStep.sapMText {
+    display: none !important;
+  }
+  .badeel_main_tagInput.sapMInputBase {
+    max-width: 100% !important;
+    flex: 1 1 auto !important;
+  }
+  .badeel_main_locRow {
+    flex-wrap: wrap !important;
+  }
+  .badeel_main_locInput.sapMInputBase {
+    flex: 1 1 100% !important;
+  }
+}
+/* ============ Registration Complete ============ */
+.badeel_main_authIconCircleSuccess {
+  background: var(--badeel_main-success-light) !important;
+}
+
+.badeel_main_authIconSuccess {
+  color: var(--badeel_main-success) !important;
+}
+
+.badeel_main_authActions {
+  width: 100%;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.badeel_main_authActions .badeel_main_authBtn.sapMBtn {
+  width: 100% !important;
+}
