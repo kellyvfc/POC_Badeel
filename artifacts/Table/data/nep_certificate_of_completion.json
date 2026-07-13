@@ -1,0 +1,205 @@
+[
+	{
+		"id": "bc02f409-a36e-454f-b2b5-5c1f115ba49b",
+		"createdAt": "1783680915214",
+		"updatedAt": "1783680915214",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"cocNo": "COC-2026-0021",
+		"poNumber": "PO-100240",
+		"vendor": "Horizon Facilities Group",
+		"issueDate": "28 Jun 2026",
+		"status": "Approved",
+		"statusState": "Success",
+		"acceptedLines": "1",
+		"acceptedQty": "4",
+		"acceptedAmount": "€6,000.00",
+		"approvedBy": "F. Al Harbi (Procurement)",
+		"subtitle": "Approved - Facilities cleaning",
+		"sourceCR": "",
+		"lines": [
+			{
+				"description": "10 - Deep cleaning - Block B",
+				"orderedQty": "10",
+				"acceptedQty": "4",
+				"remainingQty": "6",
+				"acceptedAmount": "€6,000.00",
+				"price": 1500,
+				"lineNo": "10",
+				"qty": 4
+			}
+		],
+		"attachments": [
+			{
+				"name": "block-b-cleaning.pdf",
+				"type": "Service Completion Record"
+			}
+		]
+	},
+	{
+		"id": "97041d7f-0e5d-4681-a970-ce16c0fc09b4",
+		"createdAt": "1783680915214",
+		"updatedAt": "1783680915214",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"cocNo": "COC-2026-0012",
+		"poNumber": "PO-100240",
+		"vendor": "Atlas Engineering Ltd.",
+		"issueDate": "24 Jun 2026",
+		"status": "Approved",
+		"statusState": "Success",
+		"acceptedLines": "2",
+		"acceptedQty": "9",
+		"acceptedAmount": "€19,500.00",
+		"approvedBy": "F. Al Harbi (Procurement)",
+		"subtitle": "Approved · Annual cleaning services",
+		"sourceCR": null,
+		"lines": [
+			{
+				"description": "10 - Deep cleaning - Block A",
+				"orderedQty": "12",
+				"acceptedQty": "6",
+				"remainingQty": "6",
+				"acceptedAmount": "€15,000.00",
+				"price": 2500,
+				"lineNo": "10",
+				"qty": 6
+			},
+			{
+				"description": "20 - Window cleaning - Towers",
+				"orderedQty": "8",
+				"acceptedQty": "3",
+				"remainingQty": "5",
+				"acceptedAmount": "€4,500.00",
+				"price": 1500,
+				"lineNo": "20",
+				"qty": 3
+			}
+		],
+		"attachments": [
+			{
+				"name": "delivery-note-block-a.pdf",
+				"type": "Delivery Note"
+			},
+			{
+				"name": "service-record-towers.pdf",
+				"type": "Service Completion Record"
+			}
+		]
+	},
+	{
+		"id": "56525532-94d3-4335-8f5c-c13a1466b1cf",
+		"createdAt": "1783680915214",
+		"updatedAt": "1783680915214",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"cocNo": "COC-2026-0009",
+		"poNumber": "PO-100234",
+		"vendor": "Atlas Engineering Ltd.",
+		"issueDate": "18 May 2026",
+		"status": "Approved",
+		"statusState": "Success",
+		"acceptedLines": "1",
+		"acceptedQty": "2",
+		"acceptedAmount": "€24,000.00",
+		"approvedBy": "S. Nasser (Requester)",
+		"subtitle": "Approved · Port equipment maintenance",
+		"sourceCR": null,
+		"lines": [
+			{
+				"description": "10 - Crane inspection & servicing",
+				"orderedQty": "4",
+				"acceptedQty": "2",
+				"remainingQty": "2",
+				"acceptedAmount": "€24,000.00",
+				"price": 12000,
+				"lineNo": "10",
+				"qty": 2
+			}
+		],
+		"attachments": [
+			{
+				"name": "crane-inspection-report.pdf",
+				"type": "Service Completion Record"
+			},
+			{
+				"name": "site-photos.zip",
+				"type": "Photos"
+			}
+		]
+	},
+	{
+		"id": "136d57ef-6a0d-45bc-97cc-6069a620f478",
+		"createdAt": "1783680915214",
+		"updatedAt": "1783680915214",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"cocNo": "COC-2026-0015",
+		"poNumber": "PO-100234",
+		"vendor": "Atlas Engineering Ltd.",
+		"issueDate": "05 Jul 2026",
+		"status": "Pending Approval",
+		"statusState": "Warning",
+		"acceptedLines": "1",
+		"acceptedQty": "2",
+		"acceptedAmount": "€24,000.00",
+		"approvedBy": "Awaiting Procurement",
+		"subtitle": "Pending approval · Port equipment maintenance",
+		"sourceCR": null,
+		"lines": [
+			{
+				"description": "10 - Crane inspection & servicing",
+				"orderedQty": "4",
+				"acceptedQty": "2",
+				"remainingQty": "0",
+				"acceptedAmount": "€24,000.00",
+				"price": 12000,
+				"lineNo": "10",
+				"qty": 2
+			}
+		],
+		"attachments": [
+			{
+				"name": "crane-inspection-2.pdf",
+				"type": "Service Completion Record"
+			}
+		]
+	},
+	{
+		"id": "0c411721-13ff-4de6-9a9e-9f4e44a7c8f4",
+		"createdAt": "1783680915214",
+		"updatedAt": "1783680915214",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"cocNo": "COC-2026-0024",
+		"poNumber": "PO-100255",
+		"vendor": "Vertex Cloud Services",
+		"issueDate": "30 Jun 2026",
+		"status": "Approved",
+		"statusState": "Success",
+		"acceptedLines": "1",
+		"acceptedQty": "1",
+		"acceptedAmount": "€40,000.00",
+		"approvedBy": "S. Nasser (Requester)",
+		"subtitle": "Approved - Landing zone design",
+		"sourceCR": "",
+		"lines": [
+			{
+				"description": "10 - Landing zone design",
+				"orderedQty": "1",
+				"acceptedQty": "1",
+				"remainingQty": "0",
+				"acceptedAmount": "€40,000.00",
+				"price": 40000,
+				"lineNo": "10",
+				"qty": 1
+			}
+		],
+		"attachments": [
+			{
+				"name": "landing-zone-final.pdf",
+				"type": "Service Completion Record"
+			}
+		]
+	}
+]

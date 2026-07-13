@@ -1,0 +1,117 @@
+[
+	{
+		"id": "d0b86eae-7209-443e-bd5e-8e27bcc352a7",
+		"createdAt": "1783680915194",
+		"updatedAt": "1783680915194",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"poNumber": "PO-100234",
+		"entity": "Badeel Marine",
+		"description": "Port equipment maintenance",
+		"contractRef": "CTR-2025-014",
+		"currency": "EUR",
+		"advancePaid": "20000.00",
+		"billing": "Badeel Marine, Riyadh, KSA",
+		"tax": "VAT 15% - Reg. 300123456700003",
+		"lines": [
+			{
+				"lineNo": "10",
+				"description": "Crane inspection & servicing",
+				"unit": "EA",
+				"orderedQty": 4,
+				"acceptedQty": 2,
+				"price": 12000
+			},
+			{
+				"lineNo": "20",
+				"description": "Conveyor belt overhaul",
+				"unit": "EA",
+				"orderedQty": 2,
+				"acceptedQty": 0,
+				"price": 18000
+			},
+			{
+				"lineNo": "30",
+				"description": "Spare parts kit",
+				"unit": "SET",
+				"orderedQty": 6,
+				"acceptedQty": 0,
+				"price": 3000
+			}
+		]
+	},
+	{
+		"id": "b7521d0d-3b49-4bdc-9ec2-fd160b6935e8",
+		"createdAt": "1783680915194",
+		"updatedAt": "1783680915194",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"poNumber": "PO-100255",
+		"entity": "Badeel IT",
+		"description": "Cloud infrastructure setup",
+		"contractRef": "CTR-2025-030",
+		"currency": "EUR",
+		"advancePaid": "15000.00",
+		"billing": "Badeel IT, Riyadh, KSA",
+		"tax": "VAT 15% - Reg. 300123456700003",
+		"lines": [
+			{
+				"lineNo": "10",
+				"description": "Landing zone design",
+				"unit": "JOB",
+				"orderedQty": 1,
+				"acceptedQty": 0,
+				"price": 40000
+			},
+			{
+				"lineNo": "20",
+				"description": "Network configuration",
+				"unit": "JOB",
+				"orderedQty": 1,
+				"acceptedQty": 0,
+				"price": 30000
+			},
+			{
+				"lineNo": "30",
+				"description": "Managed support (months)",
+				"unit": "MO",
+				"orderedQty": 12,
+				"acceptedQty": 0,
+				"price": 2083.33
+			}
+		]
+	},
+	{
+		"id": "af898906-36c8-40f0-bedc-8e3fdaf018b8",
+		"createdAt": "1783680915194",
+		"updatedAt": "1783680915194",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"poNumber": "PO-100240",
+		"entity": "Badeel Facilities",
+		"description": "Annual cleaning services",
+		"contractRef": "CTR-2025-021",
+		"currency": "EUR",
+		"advancePaid": "0.00",
+		"billing": "Badeel Facilities, Jeddah, KSA",
+		"tax": "VAT 15% - Reg. 300123456700003",
+		"lines": [
+			{
+				"lineNo": "10",
+				"description": "Deep cleaning - Block A",
+				"unit": "JOB",
+				"orderedQty": 12,
+				"acceptedQty": 6,
+				"price": 2500
+			},
+			{
+				"lineNo": "20",
+				"description": "Window cleaning - Towers",
+				"unit": "JOB",
+				"orderedQty": 8,
+				"acceptedQty": 3,
+				"price": 1500
+			}
+		]
+	}
+]

@@ -1,0 +1,211 @@
+[
+	{
+		"id": "f7854245-334f-4a96-ac57-92d31948bbd8",
+		"createdAt": "1783680915206",
+		"updatedAt": "1783680915206",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"requestNo": "CR-2026-0002",
+		"poNumber": "PO-100255",
+		"vendor": "Atlas Engineering Ltd.",
+		"lineSummary": "1 line - Landing zone",
+		"submittedOn": "10 May 2026",
+		"reviewedOn": "13 May 2026",
+		"reviewer": "S. Nasser (Requester)",
+		"status": "Rejected",
+		"statusState": "Error",
+		"comments": "Landing zone design draft submitted for acceptance.",
+		"rejection": "Landing zone design not yet signed off by the architecture board. Please resubmit after formal sign-off.",
+		"cocNo": null,
+		"lines": [
+			{
+				"description": "10 - Landing zone design",
+				"ordered": "1 JOB",
+				"requested": "1 JOB"
+			}
+		],
+		"attachments": [
+			{
+				"name": "landing-zone-design.pdf",
+				"type": "Other"
+			}
+		]
+	},
+	{
+		"id": "a7549825-6cc1-4f08-81dd-e5fb1812d838",
+		"createdAt": "1783680915206",
+		"updatedAt": "1783680915206",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"requestNo": "CR-2026-0009",
+		"poNumber": "PO-100255",
+		"vendor": "Vertex Cloud Services",
+		"lineSummary": "1 line - Network configuration",
+		"submittedOn": "06 Jul 2026",
+		"reviewedOn": "–",
+		"reviewer": "–",
+		"status": "Submitted",
+		"statusState": "Information",
+		"comments": "Network configuration completed and validated with the client team.",
+		"rejection": null,
+		"cocNo": null,
+		"lines": [
+			{
+				"description": "20 - Network configuration",
+				"ordered": "1 JOB",
+				"requested": "1 JOB"
+			}
+		],
+		"attachments": [
+			{
+				"name": "network-config-signoff.pdf",
+				"type": "Service Completion Record"
+			}
+		]
+	},
+	{
+		"id": "8bcec1c9-a53d-4240-8c21-6f000e1dab64",
+		"createdAt": "1783680915206",
+		"updatedAt": "1783680915206",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"requestNo": "CR-2026-0007",
+		"poNumber": "PO-100234",
+		"vendor": "Atlas Engineering Ltd.",
+		"lineSummary": "1 line - Crane inspection",
+		"submittedOn": "02 Jul 2026",
+		"reviewedOn": "–",
+		"reviewer": "–",
+		"status": "Under Review",
+		"statusState": "Warning",
+		"comments": "Crane servicing completed on site. Signed acceptance from the operations supervisor is attached.",
+		"rejection": null,
+		"cocNo": null,
+		"lines": [
+			{
+				"description": "10 - Crane inspection & servicing",
+				"ordered": "4 EA",
+				"requested": "2 EA"
+			}
+		],
+		"attachments": [
+			{
+				"name": "crane-inspection-report.pdf",
+				"type": "Service Completion Record"
+			},
+			{
+				"name": "site-photos.zip",
+				"type": "Photos"
+			}
+		]
+	},
+	{
+		"id": "7ab1c864-78ad-4d08-bc36-31756e91ce8e",
+		"createdAt": "1783680915206",
+		"updatedAt": "1783680915206",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"requestNo": "CR-2026-0010",
+		"poNumber": "PO-100234",
+		"vendor": "Atlas Freight Partners",
+		"lineSummary": "1 line - Spare parts kit",
+		"submittedOn": "07 Jul 2026",
+		"reviewedOn": "–",
+		"reviewer": "–",
+		"status": "Submitted",
+		"statusState": "Information",
+		"comments": "Spare parts delivered to the port warehouse.",
+		"rejection": null,
+		"cocNo": null,
+		"lines": [
+			{
+				"description": "30 - Spare parts kit",
+				"ordered": "6 SET",
+				"requested": "4 SET"
+			}
+		],
+		"attachments": [
+			{
+				"name": "waybill-9921.pdf",
+				"type": "Waybill"
+			},
+			{
+				"name": "delivery-photos.zip",
+				"type": "Photos"
+			}
+		]
+	},
+	{
+		"id": "43e6ac20-56b8-4a58-9326-ff90e6c09846",
+		"createdAt": "1783680915206",
+		"updatedAt": "1783680915206",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"requestNo": "CR-2026-0005",
+		"poNumber": "PO-100240",
+		"vendor": "Atlas Engineering Ltd.",
+		"lineSummary": "2 lines - Cleaning",
+		"submittedOn": "20 Jun 2026",
+		"reviewedOn": "24 Jun 2026",
+		"reviewer": "F. Al Harbi (Procurement)",
+		"status": "Accepted",
+		"statusState": "Success",
+		"comments": "Deep cleaning of Block A and window cleaning of the towers completed as scheduled.",
+		"rejection": null,
+		"cocNo": null,
+		"lines": [
+			{
+				"description": "10 - Deep cleaning - Block A",
+				"ordered": "12 JOB",
+				"requested": "6 JOB"
+			},
+			{
+				"description": "20 - Window cleaning - Towers",
+				"ordered": "8 JOB",
+				"requested": "3 JOB"
+			}
+		],
+		"attachments": [
+			{
+				"name": "delivery-note-block-a.pdf",
+				"type": "Delivery Note"
+			},
+			{
+				"name": "service-record-towers.pdf",
+				"type": "Service Completion Record"
+			}
+		]
+	},
+	{
+		"id": "35d41d6f-8d8d-44a0-91fa-6fed48bf9cf6",
+		"createdAt": "1783680915206",
+		"updatedAt": "1783680915206",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"requestNo": "CR-2026-0004",
+		"poNumber": "PO-100234",
+		"vendor": "Atlas Engineering Ltd.",
+		"lineSummary": "1 line - Crane inspection",
+		"submittedOn": "15 May 2026",
+		"reviewedOn": "18 May 2026",
+		"reviewer": "S. Nasser (Requester)",
+		"status": "Accepted",
+		"statusState": "Success",
+		"comments": "First batch of crane inspections completed.",
+		"rejection": null,
+		"cocNo": null,
+		"lines": [
+			{
+				"description": "10 - Crane inspection & servicing",
+				"ordered": "4 EA",
+				"requested": "2 EA"
+			}
+		],
+		"attachments": [
+			{
+				"name": "crane-batch1.pdf",
+				"type": "Service Completion Record"
+			}
+		]
+	}
+]

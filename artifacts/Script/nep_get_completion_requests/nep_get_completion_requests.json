@@ -1,0 +1,26 @@
+{
+	"id": "c8b12806-4125-4332-86bb-9b9dff49740a",
+	"createdAt": "2026-07-10T10:56:53.039Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"apis": [],
+	"name": "nep_get_completion_requests",
+	"ver": "26.07.10.1056",
+	"description": "GET /api/nep/completion-requests — full completion request list with lines/attachments",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"jsscriptGroupObj": {
+		"id": "ae728add-e363-4c25-8aa0-57d100db5694",
+		"name": "BadeelMainNEP",
+		"ver": "26.07.13.1333"
+	}
+}

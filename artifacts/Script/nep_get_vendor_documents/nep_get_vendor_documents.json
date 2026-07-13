@@ -1,0 +1,26 @@
+{
+	"id": "fb33e47a-ec57-4658-a502-b87247eb5187",
+	"createdAt": "2026-07-10T10:57:05.411Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"apis": [],
+	"name": "nep_get_vendor_documents",
+	"ver": "26.07.10.1057",
+	"description": "GET /api/nep/vendor-documents — vendor qualification documents. Optional query param: vendorCompany (omit to list all)",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"jsscriptGroupObj": {
+		"id": "ae728add-e363-4c25-8aa0-57d100db5694",
+		"name": "BadeelMainNEP",
+		"ver": "26.07.13.1333"
+	}
+}

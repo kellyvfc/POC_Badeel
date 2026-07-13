@@ -1,0 +1,231 @@
+[
+	{
+		"id": "fef4d16e-badf-4403-a37a-fc36cd0e2744",
+		"createdAt": "1783680915179",
+		"updatedAt": "1783680915179",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"company": "Horizon Facilities Group",
+		"contact": "Mr. Marcus Weber",
+		"country": "Germany",
+		"status": "Invitation Sent",
+		"statusState": "Information",
+		"qualification": "Not Started",
+		"invitedOn": "01 Jul 2026",
+		"registeredOn": "–",
+		"legalName": "Horizon Facilities GmbH",
+		"taxId": "DE811234567",
+		"address": "Hauptstrasse 45",
+		"city": "Munich",
+		"zip": "80331",
+		"contactTitle": "Mr.",
+		"contactFirstName": "Marcus",
+		"contactLastName": "Weber",
+		"contactEmail": "m.weber@horizonfg.com",
+		"contactPhone": "+49 89 555 0134",
+		"bankVerified": "No",
+		"categories": [
+			"Facilities Management",
+			"Cleaning"
+		],
+		"locations": [
+			{
+				"name": "Munich Office",
+				"city": "Munich",
+				"country": "Germany"
+			}
+		]
+	},
+	{
+		"id": "c142d830-ae60-4385-8b36-92cbed78f384",
+		"createdAt": "1783680915179",
+		"updatedAt": "1783680915179",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"company": "Stellar Marine Logistics",
+		"contact": "Ms. Ines Duarte",
+		"country": "Portugal",
+		"status": "Invitation Sent",
+		"statusState": "Information",
+		"qualification": "Not Started",
+		"invitedOn": "05 Jul 2026",
+		"registeredOn": "–",
+		"legalName": "Stellar Marine Logistics Lda.",
+		"taxId": "PT509876543",
+		"address": "Rua do Ouro 120",
+		"city": "Lisbon",
+		"zip": "1100-062",
+		"contactTitle": "Ms.",
+		"contactFirstName": "Ines",
+		"contactLastName": "Duarte",
+		"contactEmail": "ines.duarte@stellarmarine.com",
+		"contactPhone": "+351 21 555 0110",
+		"bankVerified": "No",
+		"categories": [
+			"Logistics",
+			"Freight Forwarding"
+		],
+		"locations": [
+			{
+				"name": "Lisbon HQ",
+				"city": "Lisbon",
+				"country": "Portugal"
+			}
+		]
+	},
+	{
+		"id": "9370442e-c663-4027-849e-57bba0ef23cb",
+		"createdAt": "1783680915179",
+		"updatedAt": "1783680915179",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"company": "Atlas Engineering Ltd.",
+		"contact": "Ms. Sofia Marin",
+		"country": "Spain",
+		"status": "Registered",
+		"statusState": "Success",
+		"qualification": "Approved",
+		"invitedOn": "20 Apr 2026",
+		"registeredOn": "26 Apr 2026",
+		"legalName": "Atlas Engineering Ltd.",
+		"taxId": "ESB12345674",
+		"address": "Calle Mayor 45",
+		"city": "Madrid",
+		"zip": "28013",
+		"contactTitle": "Ms.",
+		"contactFirstName": "Sofia",
+		"contactLastName": "Marin",
+		"contactEmail": "sofia.marin@atlaseng.com",
+		"contactPhone": "+34 91 555 0147",
+		"bankVerified": "Yes",
+		"categories": [
+			"Engineering",
+			"Construction",
+			"Renewable Energy"
+		],
+		"locations": [
+			{
+				"name": "Madrid HQ",
+				"city": "Madrid",
+				"country": "Spain"
+			}
+		]
+	},
+	{
+		"id": "594abb26-82b6-424f-98d0-a712eb739634",
+		"createdAt": "1783680915179",
+		"updatedAt": "1783680915179",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"company": "Atlas Freight Partners",
+		"contact": "Mr. Omar Siddiqui",
+		"country": "United Arab Emirates",
+		"status": "Registered",
+		"statusState": "Success",
+		"qualification": "Approved",
+		"invitedOn": "28 Apr 2026",
+		"registeredOn": "03 May 2026",
+		"legalName": "Atlas Freight Partners FZE",
+		"taxId": "AE100234567800003",
+		"address": "Jebel Ali Free Zone",
+		"city": "Dubai",
+		"zip": "17000",
+		"contactTitle": "Mr.",
+		"contactFirstName": "Omar",
+		"contactLastName": "Siddiqui",
+		"contactEmail": "omar@atlasfreight.com",
+		"contactPhone": "+971 4 555 0178",
+		"bankVerified": "Yes",
+		"categories": [
+			"Freight",
+			"Customs Clearance"
+		],
+		"locations": [
+			{
+				"name": "Dubai HQ",
+				"city": "Dubai",
+				"country": "United Arab Emirates"
+			}
+		]
+	},
+	{
+		"id": "4bf5743f-6995-48c6-9118-f27289219bf9",
+		"createdAt": "1783680915179",
+		"updatedAt": "1783680915179",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"company": "Meridian Supply Chain Co.",
+		"contact": "Ms. Elena Papadopoulos",
+		"country": "Greece",
+		"status": "Registered",
+		"statusState": "Success",
+		"qualification": "Approved",
+		"invitedOn": "04 May 2026",
+		"registeredOn": "12 May 2026",
+		"legalName": "Meridian Supply Chain S.A.",
+		"taxId": "EL998877665",
+		"address": "Leof. Kifisias 200",
+		"city": "Athens",
+		"zip": "11525",
+		"contactTitle": "Ms.",
+		"contactFirstName": "Elena",
+		"contactLastName": "Papadopoulos",
+		"contactEmail": "elena.p@meridiansc.com",
+		"contactPhone": "+30 21 555 0155",
+		"bankVerified": "Yes",
+		"categories": [
+			"Supply Chain",
+			"Warehousing",
+			"Distribution"
+		],
+		"locations": [
+			{
+				"name": "Athens DC",
+				"city": "Athens",
+				"country": "Greece"
+			},
+			{
+				"name": "Thessaloniki Hub",
+				"city": "Thessaloniki",
+				"country": "Greece"
+			}
+		]
+	},
+	{
+		"id": "48841fba-a06a-4231-a871-dbdbe548ae3e",
+		"createdAt": "1783680915179",
+		"updatedAt": "1783680915179",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"company": "Bright Line IT Consulting",
+		"contact": "Mr. Daniel Okafor",
+		"country": "Nigeria",
+		"status": "Pending Registration",
+		"statusState": "Warning",
+		"qualification": "In Progress",
+		"invitedOn": "25 Jun 2026",
+		"registeredOn": "–",
+		"legalName": "Bright Line IT Consulting Ltd.",
+		"taxId": "NG12345678",
+		"address": "14 Adeola Odeku St",
+		"city": "Lagos",
+		"zip": "101241",
+		"contactTitle": "Mr.",
+		"contactFirstName": "Daniel",
+		"contactLastName": "Okafor",
+		"contactEmail": "daniel@brightlineit.com",
+		"contactPhone": "+234 1 555 0190",
+		"bankVerified": "No",
+		"categories": [
+			"IT Consulting",
+			"Software"
+		],
+		"locations": [
+			{
+				"name": "Lagos HQ",
+				"city": "Lagos",
+				"country": "Nigeria"
+			}
+		]
+	}
+]

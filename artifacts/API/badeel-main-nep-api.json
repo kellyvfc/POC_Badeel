@@ -357,7 +357,7 @@
 	"documentation": [],
 	"name": "badeel-main-nep-api",
 	"endpoint": "/api/serverscript/badeel-main-nep-api",
-	"ver": "26.07.10.1143",
+	"ver": "26.07.13.1334",
 	"version": null,
 	"description": "GET APIs backing the badeel_main_nep app, replacing its hardcoded frontend data",
 	"mediaType": null,

@@ -1,0 +1,21 @@
+{
+	"id": "e965b205-0616-4e9b-9605-f735805ff7bf",
+	"createdAt": "2026-07-10T10:56:28.017Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"apis": [],
+	"name": "nep_get_lookups",
+	"ver": "26.07.10.1056",
+	"description": "GET /api/nep/lookups — countries, tax countries, currencies, payment terms, attachment types, contact titles, document types",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c"
+}

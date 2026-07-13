@@ -1,0 +1,26 @@
+{
+	"id": "b64333a3-7233-414f-bb3e-5f8f2be2f5d1",
+	"createdAt": "2026-07-10T10:57:11.395Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"apis": [],
+	"name": "nep_get_invoice_purchase_orders",
+	"ver": "26.07.10.1057",
+	"description": "GET /api/nep/invoice-purchase-orders — POs eligible for invoicing (have at least one Approved CoC), with computed poValue/remaining/cocCount, for the Create Invoice wizard step 1",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"jsscriptGroupObj": {
+		"id": "ae728add-e363-4c25-8aa0-57d100db5694",
+		"name": "BadeelMainNEP",
+		"ver": "26.07.13.1333"
+	}
+}

@@ -975,11 +975,21 @@ function openVendorDetail(v) {
 }
 
 function renderVendorCategories(cats) {
+	if (cats) { window._currentVendorCategories = cats; }
+	cats = window._currentVendorCategories || [];
 	var dom = categoryTags.getDomRef();
 	if (!dom) { setTimeout(function(){ renderVendorCategories(cats); }, 60); return; }
 	var html = '';
 	cats.forEach(function(c){ html += '<span class="badeel_main_tagPill">' + esc(c) + '</span>'; });
 	dom.innerHTML = html || '<span class="badeel_main_revEmptyText">No categories.</span>';
+}
+
+function onVendorDetailTabSelect(oEvent) {
+	var key = oEvent.getParameter('key');
+	if (key === 'business') {
+		// Tab content DOM is re-created on switch; re-inject cached category tags
+		renderVendorCategories(window._currentVendorCategories || []);
+	}
 }
 
 function onVendorRowSelect(oEvent) {

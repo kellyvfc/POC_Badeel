@@ -1,0 +1,207 @@
+[
+	{
+		"id": "b55513c7-3c0c-4edf-ad54-cd9c9248a203",
+		"createdAt": "1783680915198",
+		"updatedAt": "1783680915198",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"invoiceNo": "INV-2026-0041",
+		"poNumber": "PO-100234",
+		"entity": "Badeel - National Renewable Energy Program (NREP)",
+		"vendor": "Atlas Engineering Ltd.",
+		"netPayable": "€70,000.00",
+		"status": "Approved",
+		"statusState": "Success",
+		"date": "02 Jun 2026",
+		"dueDate": "02 Jul 2026",
+		"terms": "Net 30",
+		"gross": "€90,000.00",
+		"advance": "– €20,000.00",
+		"net": "€70,000.00",
+		"rejection": "",
+		"lines": [
+			{
+				"description": "Solar panel installation",
+				"qty": "1",
+				"price": "€90,000.00",
+				"tax": "0",
+				"total": "€90,000.00"
+			}
+		],
+		"attachments": [
+			{
+				"name": "tax-invoice-0041.pdf",
+				"type": "Tax Invoice"
+			},
+			{
+				"name": "completion-cert.pdf",
+				"type": "Certificate of Completion"
+			}
+		]
+	},
+	{
+		"id": "8bf076fd-5b8a-4ceb-96c4-512716bc54e4",
+		"createdAt": "1783680915198",
+		"updatedAt": "1783680915198",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"invoiceNo": "INV-2026-0007",
+		"poNumber": "PO-100240",
+		"entity": "Badeel Facilities",
+		"vendor": "Atlas Engineering Ltd.",
+		"netPayable": "€4,200.00",
+		"status": "Rejected",
+		"statusState": "Error",
+		"date": "15 Apr 2026",
+		"dueDate": "15 May 2026",
+		"terms": "Net 30",
+		"gross": "€4,200.00",
+		"advance": "– €0.00",
+		"net": "€4,200.00",
+		"rejection": "Missing certificate of completion. Please attach and resubmit.",
+		"lines": [
+			{
+				"description": "Ad-hoc maintenance",
+				"qty": "2",
+				"price": "€2,100.00",
+				"tax": "0",
+				"total": "€4,200.00"
+			}
+		],
+		"attachments": []
+	},
+	{
+		"id": "40ca733c-5840-4bf4-9f93-e04b14f559e2",
+		"createdAt": "1783680915198",
+		"updatedAt": "1783680915198",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"invoiceNo": "INV-2026-0071",
+		"poNumber": "PO-100234",
+		"entity": "Badeel - National Renewable Energy Program (NREP)",
+		"vendor": "Atlas Engineering Ltd.",
+		"netPayable": "€18,500.00",
+		"status": "Draft",
+		"statusState": "None",
+		"date": "03 Jul 2026",
+		"dueDate": "02 Aug 2026",
+		"terms": "Net 30",
+		"gross": "€18,500.00",
+		"advance": "– €0.00",
+		"net": "€18,500.00",
+		"rejection": "",
+		"lines": [
+			{
+				"description": "Engineering consultancy",
+				"qty": "10",
+				"price": "€1,850.00",
+				"tax": "0",
+				"total": "€18,500.00"
+			}
+		],
+		"attachments": []
+	},
+	{
+		"id": "3eb6630c-80d5-4591-ade4-27a6dd5cc195",
+		"createdAt": "1783680915198",
+		"updatedAt": "1783680915198",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"invoiceNo": "INV-2026-0019",
+		"poNumber": "PO-100255",
+		"entity": "Badeel IT",
+		"vendor": "Atlas Engineering Ltd.",
+		"netPayable": "€25,000.00",
+		"status": "Paid",
+		"statusState": "Success",
+		"date": "28 Apr 2026",
+		"dueDate": "28 May 2026",
+		"terms": "Net 30",
+		"gross": "€25,000.00",
+		"advance": "– €0.00",
+		"net": "€25,000.00",
+		"rejection": "",
+		"lines": [
+			{
+				"description": "Software licenses",
+				"qty": "50",
+				"price": "€500.00",
+				"tax": "0",
+				"total": "€25,000.00"
+			}
+		],
+		"attachments": [
+			{
+				"name": "tax-invoice-0019.pdf",
+				"type": "Tax Invoice"
+			}
+		]
+	},
+	{
+		"id": "3886f185-88a9-43cc-ae96-0a3622791077",
+		"createdAt": "1783680915198",
+		"updatedAt": "1783680915198",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"invoiceNo": "INV-2026-0028",
+		"poNumber": "PO-100255",
+		"entity": "Badeel IT",
+		"vendor": "Atlas Engineering Ltd.",
+		"netPayable": "€8,900.00",
+		"status": "Under Review",
+		"statusState": "Warning",
+		"date": "11 May 2026",
+		"dueDate": "10 Jun 2026",
+		"terms": "Net 45",
+		"gross": "€8,900.00",
+		"advance": "– €0.00",
+		"net": "€8,900.00",
+		"rejection": "",
+		"lines": [
+			{
+				"description": "Cloud setup",
+				"qty": "1",
+				"price": "€8,900.00",
+				"tax": "0",
+				"total": "€8,900.00"
+			}
+		],
+		"attachments": []
+	},
+	{
+		"id": "1ed4c386-d6e4-4c7c-82ee-d196d452b614",
+		"createdAt": "1783680915198",
+		"updatedAt": "1783680915198",
+		"createdBy": "veronica.fernandez@neptune-software.com",
+		"updatedBy": "veronica.fernandez@neptune-software.com",
+		"invoiceNo": "INV-2026-0035",
+		"poNumber": "PO-100240",
+		"entity": "Badeel Facilities",
+		"vendor": "Atlas Engineering Ltd.",
+		"netPayable": "€12,300.00",
+		"status": "Submitted",
+		"statusState": "Information",
+		"date": "20 May 2026",
+		"dueDate": "19 Jun 2026",
+		"terms": "Net 30",
+		"gross": "€12,300.00",
+		"advance": "– €0.00",
+		"net": "€12,300.00",
+		"rejection": "",
+		"lines": [
+			{
+				"description": "Cleaning services",
+				"qty": "3",
+				"price": "€4,100.00",
+				"tax": "0",
+				"total": "€12,300.00"
+			}
+		],
+		"attachments": [
+			{
+				"name": "tax-invoice-0035.pdf",
+				"type": "Tax Invoice"
+			}
+		]
+	}
+]

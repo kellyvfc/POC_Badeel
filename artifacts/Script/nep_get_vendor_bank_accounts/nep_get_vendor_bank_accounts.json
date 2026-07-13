@@ -1,0 +1,26 @@
+{
+	"id": "4d90c4da-5c3e-4d68-b283-0e8ac254163b",
+	"createdAt": "2026-07-10T10:57:01.776Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"apis": [],
+	"name": "nep_get_vendor_bank_accounts",
+	"ver": "26.07.10.1057",
+	"description": "GET /api/nep/vendor-bank-accounts — vendor qualification profile bank details. Optional query param: vendorCompany",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c",
+	"jsscriptGroupObj": {
+		"id": "ae728add-e363-4c25-8aa0-57d100db5694",
+		"name": "BadeelMainNEP",
+		"ver": "26.07.13.1333"
+	}
+}

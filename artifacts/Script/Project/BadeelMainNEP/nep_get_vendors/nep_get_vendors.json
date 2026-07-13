@@ -1,0 +1,21 @@
+{
+	"id": "9fd1e11e-de0b-462f-92dd-4b32c7aaa401",
+	"createdAt": "2026-07-10T10:56:41.768Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"apis": [],
+	"name": "nep_get_vendors",
+	"ver": "26.07.10.1056",
+	"description": "GET /api/nep/vendors — vendor master list with categories/locations, for Vendors list + detail screens",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c"
+}

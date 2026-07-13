@@ -4,7 +4,7 @@
 	"createdBy": "veronica.fernandez@neptune-software.com",
 	"git": {
 		"remote": "https://github.com/kellyvfc/POC_Badeel.git",
-		"branch": "master"
+		"branch": "branch1"
 	},
 	"name": "POC_Badeel",
 	"description": "Development package for Badeel POC",
@@ -118,11 +118,72 @@
 			"description": "Badeel Vendor Portal - vendor master + onboarding/qualification state"
 		}
 	],
-	"jsclass": [],
+	"jsclass": [
+		{
+			"id": "fca0b10e-f4b6-4b15-997b-88b55292314a",
+			"name": "nep_get_invoices",
+			"description": "GET /api/nep/invoices — full vendor invoice list with lines/attachments, for Invoice List/Detail and Home widget"
+		},
+		{
+			"id": "fb33e47a-ec57-4658-a502-b87247eb5187",
+			"name": "nep_get_vendor_documents",
+			"description": "GET /api/nep/vendor-documents — vendor qualification documents. Optional query param: vendorCompany (omit to list all)"
+		},
+		{
+			"id": "e965b205-0616-4e9b-9605-f735805ff7bf",
+			"name": "nep_get_lookups",
+			"description": "GET /api/nep/lookups — countries, tax countries, currencies, payment terms, attachment types, contact titles, document types"
+		},
+		{
+			"id": "d79b5c26-63b8-4cb1-b20e-136852e04e4f",
+			"name": "nep_get_vendor_invitations",
+			"description": "GET /api/nep/vendor-invitations — Home admin activity widget + Invite Vendors recent invites list. Optional query param: limit"
+		},
+		{
+			"id": "c96dca56-1545-470c-94a4-57e45d80efea",
+			"name": "nep_get_purchase_orders",
+			"description": "GET /api/nep/purchase-orders — raw PO master catalog with line items, for Completion Request PO picker and PO detail dialog"
+		},
+		{
+			"id": "c8b12806-4125-4332-86bb-9b9dff49740a",
+			"name": "nep_get_completion_requests",
+			"description": "GET /api/nep/completion-requests — full completion request list with lines/attachments"
+		},
+		{
+			"id": "b9dfcccf-7fe3-477b-a40a-c9c1a38bda1d",
+			"name": "nep_seed_data",
+			"description": "One-time idempotent seed of mock data for all badeel_main_nep backend tables"
+		},
+		{
+			"id": "b64333a3-7233-414f-bb3e-5f8f2be2f5d1",
+			"name": "nep_get_invoice_purchase_orders",
+			"description": "GET /api/nep/invoice-purchase-orders — POs eligible for invoicing (have at least one Approved CoC), with computed poValue/remaining/cocCount, for the Create Invoice wizard step 1"
+		},
+		{
+			"id": "9fd1e11e-de0b-462f-92dd-4b32c7aaa401",
+			"name": "nep_get_vendors",
+			"description": "GET /api/nep/vendors — vendor master list with categories/locations, for Vendors list + detail screens"
+		},
+		{
+			"id": "4d90c4da-5c3e-4d68-b283-0e8ac254163b",
+			"name": "nep_get_vendor_bank_accounts",
+			"description": "GET /api/nep/vendor-bank-accounts — vendor qualification profile bank details. Optional query param: vendorCompany"
+		},
+		{
+			"id": "37abd5e3-2a7f-4ae5-a3dc-b66a66511981",
+			"name": "nep_get_certificates_of_completion",
+			"description": "GET /api/nep/coc-list — Certificates of Completion with lines/attachments. Defaults to Approved only (matches vendor CoC screen); pass status=all for every status, or status=&lt;value&gt; to filter"
+		},
+		{
+			"id": "2ff8309e-52a5-4018-96aa-878f0002d1ce",
+			"name": "nep_get_kpi_data",
+			"description": "GET /api/nep/kpi-data — Home dashboard KPI tile counts, computed from the live tables"
+		}
+	],
 	"jsscript_group": [
 		{
 			"id": "ae728add-e363-4c25-8aa0-57d100db5694",
-			"name": "Badeel Main NEP",
+			"name": "BadeelMainNEP",
 			"description": "Backend server scripts for the badeel_main_nep app (seed data + GET APIs) in POC_Badeel"
 		},
 		{

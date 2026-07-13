@@ -17213,6 +17213,13 @@
 																	"value": "badeel_main_detailTabs",
 																	"script": "",
 																	"translation": []
+																},
+																{
+																	"attribute": "select",
+																	"grouping": "Events",
+																	"value": "onVendorDetailTabSelect(oEvent)",
+																	"script": "onVendorDetailTabSelect(oEvent)",
+																	"translation": []
 																}
 															],
 															"data": [
@@ -32188,7 +32195,7 @@
 		"denylist": [],
 		"allowlist": []
 	},
-	"ver": "26.07.10.1342",
+	"ver": "26.07.13.1332",
 	"application": "badeel_main_nep",
 	"title": "",
 	"description": "",
@@ -32237,7 +32244,7 @@
 		{
 			"id": "61a461ce-8d4f-4ee4-9229-409f34aff01c",
 			"name": "badeel-main-nep-api",
-			"ver": "26.07.10.1143"
+			"ver": "26.07.13.1334"
 		}
 	],
 	"i18n": []

@@ -1,0 +1,21 @@
+{
+	"id": "2ff8309e-52a5-4018-96aa-878f0002d1ce",
+	"createdAt": "2026-07-10T10:56:35.056Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"apis": [],
+	"name": "nep_get_kpi_data",
+	"ver": "26.07.10.1056",
+	"description": "GET /api/nep/kpi-data — Home dashboard KPI tile counts, computed from the live tables",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "ae728add-e363-4c25-8aa0-57d100db5694",
+	"package": "6a4436e4-e3fb-4228-9e89-c669785f7f6c"
+}
